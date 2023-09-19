@@ -1,0 +1,38 @@
+1. Je kunt Python-code schrijven d.m.v. :
+statements
+values
+expressions
+operators
+variables
+assignments
+input en print (=output)
+comparisons
+conditional statements
+boolean expressions
+exception handling
+
+2. Je kunt de betekenis en toepassing van de volgende termen in eigen woorden uitleggen en voorbeelden geven:
+statement;
+value en type: string, integer, float, boolean;
+expression met operators, operands en brackets
+operator: string en arithmetic (rekenkundig);
+variabele en assignment.
+input en print (output)
+comment
+comparison met operands en operators
+conditional statement met condition, if, elif en else
+boolean expression met logical operators: not, and en or; voorrangsregels
+exception handling
+try – except – else – finally
+exception types
+LBYL en EAFP
+
+3.Je kunt een Python-programma runnen met de terminal.
+
+4.Je kunt een programmeerfout terugvinden in jouw Python-code.
+
+5.Je kunt benoemen in welk soort applicaties Python kan worden toegepast.
+
+6.Je kunt uitleggen hoe Python werkt bij de uitvoering van een Python programma.
+
+7.Je kunt een informatievraag vertalen naar leesbare, eenvoudige, doelmatige Python-code. Doelmatige code is DRY, zonder onnodige code.
