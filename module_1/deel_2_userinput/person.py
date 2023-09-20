@@ -1,7 +1,7 @@
 naam = input("hoe heet je? ")
 adres = input("wat is je adres? ")
 postcode = input("wat is je postcode? ")
-woonplaats = input("hoe heet je woonplaats? ")
+woonplaats = input("waar woon je? ")
 
 print("  ----------------------------------------------------")
 print(f"|  naam      : {naam}")
