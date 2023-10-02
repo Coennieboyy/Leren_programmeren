@@ -8,4 +8,4 @@ kortingsbonnen = 0.50
 som = (inputcroissant * croissant) + (inputstokbrood * stokbrood) - (inputkortingsbonnen * kortingsbonnen)
 antwoord = round(som, 2)
 
-print(f"de feestlunch kost je bij de bakker {antwoord}  voor de croissantjes en de stokbroden als de kortingsbonnen nog geldig zijn! ")
+print(f"de feestlunch kost je bij de bakker {antwoord} voor de croissantjes en de stokbroden als de kortingsbonnen nog geldig zijn! ")
