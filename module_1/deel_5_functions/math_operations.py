@@ -18,5 +18,5 @@ def divide(nr1, nr2):
   if nr1 == 0 or nr2 == 0:
     return None
   else:
-    return nr2 / nr1
+    return nr1 / nr2
 
