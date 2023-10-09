@@ -32,22 +32,21 @@ hogehoed = input("ben je in bezit van een hogehoed? J/N ")
 if hogehoed not in jalist:
     fouten.append("je mist een grote hoed")
 gewicht = float(input("hoe zwaar ben je? "))
-if gewicht not in jalist:
+if gewicht < MIN_WEIGHT or gewicht > MAX_WEIGHT:
     fouten.append("Uw gewicht voldoet niet aan onze eisen.")
 lengte = float(input("hoelang ben je? "))
-if lengte not in jalist:
+if lengte < MIN_WEIGHT or lengte > MAX_LENGTE:
     fouten.append("UW lengte voldoet niet aan onze eisen.")
 certificaat = input("heb je het certificaat: “Overleven met gevaarlijk personeel”? J/N ")
 if certificaat not in jalist:
     fouten.append("je hebt geen certificaat.")
+
 dierenervaring = float(input("hoelang heb je ervaring met dieren of dressuur? "))
-if dierenervaring not in jalist:
-    fouten.append("je hebt niet lang genoeg ervaring met dieren.")
 jongleerervaring = float(input("hoelang heb je ervaring met jongleren? "))
-if jongleerervaring not in jalist:
-    fouten.append("je hebt niet lang genoeg ervaring met jongleren.")
 praktijkervaring = float(input("hoelang heb je ervaring met acrobatiek? "))
-if praktijkervaring not in jalist:
+if dierenervaring < DIERENERVARING and jongleerervaring < JONGLEERERVARING and praktijkervaring < PRAKTIJKERVARING:
+    fouten.append("je hebt niet lang genoeg ervaring met dieren.") 
+    fouten.append("je hebt niet lang genoeg ervaring met jongleren.")
     fouten.append("je hebt niet lang genoeg ervaring met acrobatiek.")
 
 diploma = input("heb je een MBO-4 diploma? J/N ")
@@ -64,28 +63,28 @@ if diploma not in jalist:
 
     
 
-geslacht = input("ben je een man of vrouw of anders? ")
-if geslacht == "man":
+geslacht = input("ben je een man of vrouw of anders? ").lower()
+if geslacht == "man" or geslacht == "m":
     snor = (input("heb je een snor? J/N "))
     if snor in jalist:
         lengtesnor = int(input("hoelang is je snor in cm? "))
         if lengtesnor <= 10:
             fouten.append("je snor is te kort.")
 
-elif geslacht == "vrouw":
+elif geslacht == "vrouw" or geslacht == "v":
     krulhaar = (input("hebt u rood krul haar? J/N "))
     if krulhaar in jalist:
         lengtekrulhaar = int(input("hoelang is je haar in cm? "))
         if lengtekrulhaar < 20:
             fouten.append("je haar is te kort.")
-elif geslacht == "anders":
+elif geslacht == "anders" or geslacht == "a":
     smile = int(input("hoe groot is je glimlach in cm?"))
     if smile < 10:
         fouten.append("je glimlach is te smal")
 
-if fouten == []:
-    ("gefeliciteerd u bent uitgenodigd voor een solicitatie gesprek!")
+if not fouten:
+    ("Sorry u komt niet in aanmerking: U ontbreekt de volgende criteria: ")
 else:
-    print("Sorry u komt niet in aanmerking: U ontbreekt de volgende criteria: ")
+    print("gefeliciteerd u bent uitgenodigd voor een solicitatie gesprek! ")
 for i in fouten:
     print(i)
