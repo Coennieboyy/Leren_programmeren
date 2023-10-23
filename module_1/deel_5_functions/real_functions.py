@@ -16,3 +16,15 @@ test(name, expect_content, calculated_content )
 report()
 
 
+def afronden_stuivers(bedrag: float):
+    STUIVER = 5
+    som = round(bedrag * 100 / STUIVER) * STUIVER / 100
+    return som
+
+bedrag = 14.08
+expect_content = 14.10
+calculated_content = afronden_stuivers(bedrag)
+name = f"afronden bedrag: {bedrag} = {expect_content}"
+test(name, expect_content, calculated_content )
+
+report()
