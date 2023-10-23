@@ -28,3 +28,25 @@ name = f"afronden bedrag: {bedrag} = {expect_content}"
 test(name, expect_content, calculated_content )
 
 report()
+
+
+month_discount_brands = 'Vespa,Kymco,Yamama'
+MONTH_DISCOUNT_PERC = 10
+price = 450.50
+brand = "Vespa"
+# return calculated discount based on price and brand
+def calc_discount(price: float, brand: str, month_discount_brands: str) -> float:
+    if brand not in month_discount_brands:
+        return 0
+    else:
+        som = (price / 100) * 10
+        antwoord = round(som, 2)
+        return antwoord
+
+expect_content = 45.05
+calculated_content = calc_discount(price, brand, month_discount_brands)
+name = f"berekende korting: {expect_content}"
+test(name, expect_content, calculated_content )
+
+report()
+
