@@ -1,0 +1,49 @@
+// 1.Welk stuk code is verrantwoordelijk voor de prijzen van de pizza’s?
+
+// Prijsinformatie voor verschillende pizza-afmetingen
+    const pizzaPrices = {
+        small: 5,
+        medium: 7,
+        large: 10
+    };
+
+//2. Welk stuk code is verrantwoordelijk voor het optellen van alle pizza’s?
+
+ // Bereken de bestelling op basis van ingevoerde aantallen
+for (const size in pizzaPrices) {
+    const quantity = parseInt(document.getElementById(size + "-pizza").value);
+        if (quantity > 0) {
+            order[size] = quantity;
+            total += quantity * pizzaPrices[size];
+        }
+    }
+
+//3. Welk stuk code is verrantwoordelijk voor het uitlezen van de ingevoerde aantallen?
+
+ // Bereken de bestelling op basis van ingevoerde aantallen
+for (const size in pizzaPrices) {
+    const quantity = parseInt(document.getElementById(size + "-pizza").value);
+        if (quantity > 0) {
+            order[size] = quantity;
+            total += quantity * pizzaPrices[size];
+        }
+    }
+
+//4. Welk stuk code is verrantwoordelijk voor het starten van de berekeningen?
+
+ // Bereken de bestelling op basis van ingevoerde aantallen
+ for (const size in pizzaPrices) {
+    const quantity = parseInt(document.getElementById(size + "-pizza").value);
+        if (quantity > 0) {
+            order[size] = quantity;
+            total += quantity * pizzaPrices[size];
+        }
+    }
+
+//5.Welk stuk code is verrantwoordelijk voor het tonen van de totalen?
+    
+// Event listener voor de "Bereken Totaal" knop
+ calculateButton.addEventListener("click", function () {
+    const order = {};
+    let total = 0;
+

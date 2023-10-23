@@ -1,0 +1,96 @@
+//1.Welk stuk code is verrantwoordelijk voor het optellen van alle prijzen?
+
+// Functie om de prijs van drankjes te berekenen
+function calculateDrinkPrice(drink) {
+    // Voeg hier je prijzen voor drankjes toe
+    const prices = {
+        fris: 2.50,
+        bier: 3.00,
+        wijn: 4.00,
+    };
+    return prices[drink] || 0;
+}
+
+// Functie om de prijs van snacks te berekenen
+function calculateSnackPrice(snack) {
+    // Voeg hier je prijzen voor snacks toe
+    const prices = {
+        frikandel: 2.00,
+        bitterballen: 5.00,
+        pizza: 7.00,
+    };
+    return prices[snack] || 0;
+}
+
+//2.Welk stuk code is verrantwoordelijk voor het uitlezen van de ingevoerde aantallen?
+
+// Functie om de totaalprijs van de bestelling te berekenen
+function calculateTotalPrice() {
+    let total = 0;
+
+    for (const drink in order.drinks) {
+        total += order.drinks[drink] * calculateDrinkPrice(drink);
+    }
+
+    for (const snack in order.snacks) {
+        total += order.snacks[snack] * calculateSnackPrice(snack);
+    }
+
+    return total;
+}
+
+//3.Welk stuk code is verrantwoordelijk voor het starten van de berekeningen?
+
+// Functie om de prijs van drankjes te berekenen
+function calculateDrinkPrice(drink) {
+    // Voeg hier je prijzen voor drankjes toe
+    const prices = {
+        fris: 2.50,
+        bier: 3.00,
+        wijn: 4.00,
+    };
+    return prices[drink] || 0;
+}
+
+// Functie om de prijs van snacks te berekenen
+function calculateSnackPrice(snack) {
+    // Voeg hier je prijzen voor snacks toe
+    const prices = {
+        frikandel: 2.00,
+        bitterballen: 5.00,
+        pizza: 7.00,
+    };
+    return prices[snack] || 0;
+}
+
+//4.Welk stuk code is verrantwoordelijk voor het tonen van de totalen?
+
+// Totaalprijs
+const total = calculateTotalPrice();
+billDiv.innerHTML += `<h3>Totaal: €${total}</h3>`;
+
+//5.Welk stukje code is verrantwoordelijk voor de snacks?
+
+// Functie om snacks aan de bestelling toe te voegen
+function addSnackToOrder() {
+    const snack = document.getElementById('snack').value;
+    const quantity = parseInt(document.getElementById('snack-quantity').value);
+
+    // Controleer de hoeveelheid snacks (bitterballen en pizza)
+    if (snack === 'bitterballen' && ![8, 16].includes(quantity)) {
+        alert('U kunt alleen een keuze maken tussen 8 en 16. De snacks zijn niet toegevoegd aan de bestelling.');
+        return;
+    }
+
+    if (snack === 'pizza' && (quantity < 1 || quantity > 12)) {
+        alert('U kunt alleen tussen 1 en 12 slices pizza bestellen. De pizza is niet toegevoegd aan de bestelling.');
+        return;
+    }
+
+    if (order.snacks[snack]) {
+        order.snacks[snack] += quantity;
+    } else {
+        order.snacks[snack] = quantity;
+    }
+}
+
