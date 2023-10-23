@@ -34,12 +34,13 @@ month_discount_brands = 'Vespa,Kymco,Yamama'
 MONTH_DISCOUNT_PERC = 10
 price = 450.50
 brand = "Vespa"
+
 # return calculated discount based on price and brand
 def calc_discount(price: float, brand: str, month_discount_brands: str) -> float:
     if brand not in month_discount_brands:
         return 0
     else:
-        som = (price / 100) * 10
+        som = (price / 100) * MONTH_DISCOUNT_PERC
         antwoord = round(som, 2)
         return antwoord
 
