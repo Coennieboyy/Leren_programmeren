@@ -1,5 +1,8 @@
 import sys
 import time
+import random
+
+
 
 antwoordlista=["ja","j","nee","n"]
 antwoordlistb=["a","b"]
@@ -24,35 +27,6 @@ je doel is om optijd thuis zien te komen terwijl je dronken bent en niet meer go
                                                                klik enter om door te gaan''')
 klik = input().lower()
 clear_terminal()
-
-# vraag1=input(delay_print("ga je via de steeg? ja/nee"))
-#                         #ja = vraag2
-#                         #nee = vraag 4
-
-# vraag2=input(delay_print('''je loopt door de steeg heen en komt een zwerver tegen wat doe je?
-#                             optie 1: je biedt hem wat geld aan
-#                             optie 2:je loopt door'''))
-#                         #optie 1 =  hij wordt erg boos en agressief omdat je hem als zwerver ziet en steekt je neer
-#                         #optie 2 = vraag 3
-
-# vraag3=input(delay_print('''je komt aan de andere kant van de steeg uit. je ziet je huis al maar de brug staat open, wat doe je?
-#                             optie 1: je springt in het wateren probeert naar de overkant te zwemmen 
-#                             optie 2: je wacht tot datde brug weer beneden is maar je komt wel later aan
-#                             optie 3: optie 3:je gaat naar links om te zoeken voor een plek om om te lopen'''))
-#                         #optie 1 = je bent wat later. Maar wel veilig thuis gekomen
-#                         #optie 2 = je raakt onderkoeld en vriest dood
-#                         #
-
-# vraag4=input(delay_print('''je komt een kruispunt tegenga je links of rechts?'''))
-#                         #links = je bent de juiste kant op gegaan en je komt veilig thuis aan
-#                         #rechts = vraag 5
-
-# vraag5=input(delay_print('''je raakt verdwaald wat doe je?
-#                             optie 1: je probeert de terug weg te vinden
-#                             optie 2: je loopt door'''))
-#                         #optie 1 = vraag6
-#                         #optie 2 = terug naar start
-
 
 while True:
     try:
@@ -101,28 +75,43 @@ elif vraag2 == "b":
             print("kies uit a/b/c")
 
 if vraag3 == "a":
-    clear_terminal
+    clear_terminal()
     delay_print('''Het water is veel te koud en je vriest dood
                 
                              JE HEBT VERLOREN.''')
 
 elif vraag3 == "b":
-    clear_terminal
+    clear_terminal()
     delay_print('''Je komt heel thuis aan maar je bent wel telaat en je vader is erg boos op je.
                 
                                             JE HEBT VERLOREN MAAR JE BENT WEL HEEL THUIS''')
     
 elif vraag3 == "c":
-    clear_terminal
+    clear_terminal()
     while True:
         try:
             delay_print('''Je ziet rechts je huis maar als je loopt kom je niet optijd thuis. Je ziet ook een fiets staan maar de eigenaar staat verderop?
                            a: Je gaat gewoon naar huis
-                           b: Je probeert z'n fiets te stelen''')
+                           b: Je probeert z'n fiets te stelen
+                        ''')
             vraag4=input().lower()
             if vraag4 not in antwoordlistb:
                 raise ValueError
             break
         except ValueError:
             print("kies uit a/b")
+
+fietskans = random.randint(0, 10)
+
+if vraag4 == "a":
+    clear_terminal()
+    delay_print("je komt heel thuis maar je komt telaat aan. Je vader is erg boos")
+
+elif vraag4 == "b":
+    time.sleep(5)
+    clear_terminal() 
+    if fietskans > 5:
+        delay_print("je hebt succesvol z'n fiets gestolen en komt optijd thuis.")
+    elif fietskans < 5:
+        delay_print("De eigenaar heeft het door, hij belt de politie en je wordt opgepakt")
     
