@@ -1,5 +1,5 @@
 def antwoord(a):
-    while 1:
+    while True:
         getal = input(a)
         try:
             getal = int(getal)
