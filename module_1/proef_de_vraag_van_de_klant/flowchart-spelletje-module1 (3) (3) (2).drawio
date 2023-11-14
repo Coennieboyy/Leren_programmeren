@@ -1,0 +1,266 @@
+<mxfile host="app.diagrams.net" modified="2023-11-10T13:38:29.359Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/103.0.0.0" etag="Zbzo9w8hNwPqCmZRUvpv" version="22.1.0" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2072" dy="1868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-0" value="ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="WIyWlLk6GJQsqaUBKTNV-2" vertex="1" connectable="0">
+          <mxGeometry x="-0.48" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="8QrK9iJkaMH3_xiOBujv-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-8" value="nee&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8QrK9iJkaMH3_xiOBujv-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.1343" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="ga je via de steeg?" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="340" y="10" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="8QrK9iJkaMH3_xiOBujv-37" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-29" value="optie 1: je biedt&lt;br&gt;hem wat geld aan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8QrK9iJkaMH3_xiOBujv-28" vertex="1" connectable="0">
+          <mxGeometry x="-0.2448" y="-2" relative="1" as="geometry">
+            <mxPoint x="13" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="je loopt door de steeg heen en komt een zwerver tegen wat doe je?&lt;br&gt;" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="90" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8QrK9iJkaMH3_xiOBujv-6" target="8QrK9iJkaMH3_xiOBujv-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-12" value="rechts&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8QrK9iJkaMH3_xiOBujv-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.3138" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8QrK9iJkaMH3_xiOBujv-6" target="8QrK9iJkaMH3_xiOBujv-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-24" value="links&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8QrK9iJkaMH3_xiOBujv-23" vertex="1" connectable="0">
+          <mxGeometry x="-0.1411" y="-5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-6" value="je komt een kruispunt tegen&lt;br&gt;ga je links of rechts" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="550" y="90" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8QrK9iJkaMH3_xiOBujv-10" target="8QrK9iJkaMH3_xiOBujv-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="230" />
+              <mxPoint x="640" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-18" value="optie 1: je probeert&lt;br&gt;de terug weg te vinden" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8QrK9iJkaMH3_xiOBujv-16" vertex="1" connectable="0">
+          <mxGeometry x="-0.0514" y="7" relative="1" as="geometry">
+            <mxPoint x="-7" y="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8QrK9iJkaMH3_xiOBujv-10" target="z74uvZRc1F4aPap3yh0D-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-17" value="optie 2: je loopt door" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="z74uvZRc1F4aPap3yh0D-12" vertex="1" connectable="0">
+          <mxGeometry x="0.4914" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-10" value="je raakt verdwaald wat doe je?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="670" y="190" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8QrK9iJkaMH3_xiOBujv-15" target="SY6NwohN7gibhlJiDTAR-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="767" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-30" value="optie 2: je gaat niet naar&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;binnen en loopt verder" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="z74uvZRc1F4aPap3yh0D-29" vertex="1" connectable="0">
+          <mxGeometry x="0.1845" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8QrK9iJkaMH3_xiOBujv-15" target="ywXyLurBrzYXms8TkSIE-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-14" value="optie 1: je gaat naar binnen" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ywXyLurBrzYXms8TkSIE-13" vertex="1" connectable="0">
+          <mxGeometry x="0.3042" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-15" value="je vind de terug weg niet maar komt wel een schuur tegen wat nu" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="590" y="350" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="8QrK9iJkaMH3_xiOBujv-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-80" y="90" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-36" value="optie 2:&lt;br&gt;je loopt door&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8QrK9iJkaMH3_xiOBujv-32" vertex="1" connectable="0">
+          <mxGeometry x="0.3959" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8QrK9iJkaMH3_xiOBujv-30" target="z74uvZRc1F4aPap3yh0D-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-4" value="optie 1: &lt;br&gt;je springt in het water&lt;br&gt;en probeert naar de&lt;br&gt;overkant te zwemmen" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="z74uvZRc1F4aPap3yh0D-3" vertex="1" connectable="0">
+          <mxGeometry x="-0.5733" y="-2" relative="1" as="geometry">
+            <mxPoint x="24" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8QrK9iJkaMH3_xiOBujv-30" target="z74uvZRc1F4aPap3yh0D-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-10" y="250" as="sourcePoint" />
+            <mxPoint x="-80" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-9" value="optie 2:&amp;nbsp;&lt;br&gt;je wacht tot dat&lt;br&gt;de brug weer&amp;nbsp;&lt;br&gt;beneden is&amp;nbsp;&lt;br&gt;maar je komt wel&amp;nbsp;&lt;br&gt;later aan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="z74uvZRc1F4aPap3yh0D-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.483" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8QrK9iJkaMH3_xiOBujv-30" target="ywXyLurBrzYXms8TkSIE-0" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-2" value="optie 3:&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;je gaat naar links&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;om te zoeken&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;voor een plek om&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;om te lopen" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ywXyLurBrzYXms8TkSIE-1" vertex="1" connectable="0">
+          <mxGeometry x="0.02" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-30" value="je komt aan de andere kant van de steeg uit. je ziet je huis al maar de brug staat open, wat doe je?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="30" y="190" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-31" value="je bent de juiste kant op gegaan en je komt veilig thuis aan" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="414" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8QrK9iJkaMH3_xiOBujv-37" value="&amp;nbsp;hij wordt erg boos en agressief omdat je hem als zwerver ziet en&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;steekt je neer" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="260" y="190" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-5" value="je raakt onderkoeld en vriest dood" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="140" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-10" value="je bent wat later.&lt;br&gt;Maar wel veilig thuis gekomen" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-140" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="z74uvZRc1F4aPap3yh0D-11" target="WIyWlLk6GJQsqaUBKTNV-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-11" value="je loopt door en komt toevallig weer bij de bar uit en probeert vanaf daar weer naar huis te gaan" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="910" y="260" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="z74uvZRc1F4aPap3yh0D-15" target="WIyWlLk6GJQsqaUBKTNV-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-15" value="start" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="360" y="-180" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="z74uvZRc1F4aPap3yh0D-26" value="je slaapt in het schuurtje en overleeft de nacht maar bent niet thuis gekomen&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;matig." style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="350" y="610" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ywXyLurBrzYXms8TkSIE-0" target="ywXyLurBrzYXms8TkSIE-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-5" value="optie 1: je gaat gewoon&lt;br&gt;&amp;nbsp;naar huis maar je komt te laat" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ywXyLurBrzYXms8TkSIE-3" vertex="1" connectable="0">
+          <mxGeometry x="0.4591" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ywXyLurBrzYXms8TkSIE-0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-40" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-7" value="optie 2: je probeert &lt;br&gt;z&#39;n fiets te stelen" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ywXyLurBrzYXms8TkSIE-4" vertex="1" connectable="0">
+          <mxGeometry x="0.4558" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-0" value="Je ziet rechts je huis maar als je loopt kom je niet optijd thuis. Je ziet ook een fiets staan maar de eigenaar staat verderop" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="30" y="430" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-6" value="je komt heel thuis maar je komt telaat aan. Je vader is boos" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="190" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ywXyLurBrzYXms8TkSIE-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-40" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-8" value="De eigenaar heeft het door, hij belt de politie en je wordt opgepakt" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-200" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ywXyLurBrzYXms8TkSIE-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-40" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-9" value="je hebt succesvol z&#39;n fiets gestolen en komt optijd thuis." style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ywXyLurBrzYXms8TkSIE-12" target="z74uvZRc1F4aPap3yh0D-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-16" value="optie 1: je gaat slapen&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ywXyLurBrzYXms8TkSIE-15" vertex="1" connectable="0">
+          <mxGeometry x="0.3422" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ywXyLurBrzYXms8TkSIE-12" target="ywXyLurBrzYXms8TkSIE-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-21" value="optie 2: je gaat weer&lt;br&gt;&amp;nbsp;naar buiten" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ywXyLurBrzYXms8TkSIE-20" vertex="1" connectable="0">
+          <mxGeometry x="0.28" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-12" value="binnen zie je een matras liggen." style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="490" y="505" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ywXyLurBrzYXms8TkSIE-19" value="buiten zie je de zwerver aan komen rennen&lt;br&gt;&amp;nbsp;met een mes&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;hij steekt je neer omdat je in zijn huis was binnen gegaan" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="540" y="650" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SY6NwohN7gibhlJiDTAR-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SY6NwohN7gibhlJiDTAR-1" target="SY6NwohN7gibhlJiDTAR-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SY6NwohN7gibhlJiDTAR-4" value="optie 1: je vertrouwd hem &lt;br&gt;en gaat de andere kant op" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SY6NwohN7gibhlJiDTAR-3">
+          <mxGeometry x="0.1982" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SY6NwohN7gibhlJiDTAR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SY6NwohN7gibhlJiDTAR-1" target="SY6NwohN7gibhlJiDTAR-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SY6NwohN7gibhlJiDTAR-7" value="optie 2: je vertrouwd hem niet&lt;br&gt;&amp;nbsp;en gaat niet de andere kant op" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SY6NwohN7gibhlJiDTAR-6">
+          <mxGeometry x="0.2684" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SY6NwohN7gibhlJiDTAR-1" value="je komt 1 van je minder aardige vrienden tegen, hij vertelt je dat je de andere kant op moet gaan om thuis te komen" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="840" y="480" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="SY6NwohN7gibhlJiDTAR-2" value="hij vertelde de waarheid en je komt thuis" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="730" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SY6NwohN7gibhlJiDTAR-5" value="je bent de verkeerde kant op gegaan en kon je huis nooit vinden" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="940" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

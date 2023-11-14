@@ -103,13 +103,13 @@ def Functievraag(nummer):
             
         elif antwoord == "b":
             fietskans = random.randint(0, 10)
-            time.sleep(3)
+            time.sleep(1.5)
             clear_terminal()
             if fietskans > 5:
                 delay_print('''je hebt succesvol z'n fiets gestolen en komt optijd thuis.
                             
-                            GEWONNEN!!!
-                            ''')
+                            GEWONNEN!!!''')
+                
             elif fietskans < 5:
                 delay_print('''De eigenaar heeft het door, hij belt de politie en je wordt opgepakt.
                             
@@ -127,8 +127,7 @@ def Functievraag(nummer):
             clear_terminal()
             delay_print('''je bent de juiste kant op gegaan en je komt veilig thuis aan.
                                                     
-                        GEWONNEN!!!
-                        ''')
+                        GEWONNEN!!!''')
         
         elif antwoord == "b":
             clear_terminal()
@@ -178,8 +177,7 @@ def Functievraag(nummer):
             clear_terminal()
             delay_print('''je slaapt in het schuurtje en overleeft de nacht maar bent niet thuis gekomen 
                                                               
-                        JE VADER IS ERG BEZORGT OMDAT JE NIET THUIS BENT GEKOMEN, VERLOREN.
-                        ''')
+                        JE VADER IS ERG BEZORGT OMDAT JE NIET THUIS BENT GEKOMEN, VERLOREN.''')
             
         elif antwoord == "b":
             clear_terminal()
@@ -188,8 +186,7 @@ def Functievraag(nummer):
                         JE BENT DOOD GEGAAN, VERLOREN.''')
             
     elif nummer == 9:
-        delay_print('''je loopt door en komt toevallig weer bij de bar uit en probeert vanaf daar weer naar huis te gaan.''')
-        delay_print()
+        delay_print('''je loopt door en komt toevallig weer bij de bar uit en probeert vanaf daar weer naar huis te gaan.\n\n''')
         delay_print('''klik enter om door te gaan''')
         input().lower()
         Functievraag(1)
@@ -206,26 +203,24 @@ def Functievraag(nummer):
             clear_terminal()
             delay_print('''hij vertelde de waarheid en je komt thuis.
                         
-                        GEWONNEN!!!
-                        ''')
+                        GEWONNEN!!!''')
         
         elif antwoord == "b":
             clear_terminal()
             delay_print('''je bent de verkeerde kant op gegaan en kon je huis nooit vinden.
                         
-                        JE VADER IS ERG BEZORGT OMDAT JE NIET THUIS BENT GEKOMEN, VERLOREN.
-                        ''')
+                        JE VADER IS ERG BEZORGT OMDAT JE NIET THUIS BENT GEKOMEN, VERLOREN.''')
 
 
 clear_terminal()
 
 delay_print('''Welkom bij mijn game. Het is winter en je ging gezellig een avondje uit met je vrienden je hebt goed wat drank op en je voelt je allemaal niet meer zo helder.
-Aan de eind van de avond kijk je op je horloge en zie je dta al heel laat is je moet snel thuis komen anders is je vader boos. 
-je doel is om optijd thuis zien te komen terwijl je dronken bent en niet meer goed weet waar je heen moet, ook zie je een steegje en dat is waarschijnlijk sneller..
+Aan de eind van de avond kijk je op je horloge en zie je dat al heel laat is je moet snel thuis komen anders is je vader boos. 
+je doel is om optijd thuis zien te komen terwijl je dronken bent en niet meer goed weet waar je heen moet, ook zie je een steegje die waarschijnlijk sneller is...
             
 
 
-                                                               klik enter om door te gaan''')
+                                                               klik enter om door te gaan ''')
 klik = input().lower()
 clear_terminal()
 Functievraag(1)
