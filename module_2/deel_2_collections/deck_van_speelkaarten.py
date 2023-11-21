@@ -16,7 +16,7 @@ random.shuffle(allekaarten)
 
 for i in range(7):
     print(f"kaart{i +1}: {allekaarten[1]}")
-    allekaarten.pop(1)
+    allekaarten.pop(0)
 
 print(f"rest van de kaarten{len(allekaarten) ,allekaarten}")
 
