@@ -8,9 +8,8 @@ for i in range(7):
     print(dagen[6 - i])
 print("hele week andersom\n")
 
-for i in dagen:
-    if i in ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag"]:
-        print(i)
+for i in range(0,4):
+        print(dagen[i])
 print("werkdagen\n")
 
 for i in range(5):
