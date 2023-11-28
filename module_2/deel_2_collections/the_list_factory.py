@@ -11,4 +11,4 @@ hvllijst = antwoord("hoeveel lijstjes wil je? ")
 lengtelijst = antwoord("hoelang moet het lijstje worden? ")
 
 for i in range(1,hvllijst +1):
-    print(list(range(1 * i,lengtelijst * i + 1, 1*i )))
+    print(list(range(i, lengtelijst * i + 1, i )))
