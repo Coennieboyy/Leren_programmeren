@@ -9,7 +9,7 @@ def antwoord(a):
         except ValueError:
             print(f"{getal} is geen getal, vul een getal in")
 
-kleuren = ("orangje","blauw","groen","bruin")
+kleuren = ("oranje","blauw","groen","bruin")
 legezak = []
 
 hoeveel = antwoord("hoeveel M&M's wil je in je zakje? ")
