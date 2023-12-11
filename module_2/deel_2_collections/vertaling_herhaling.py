@@ -7,7 +7,7 @@ veranderwoorden={
     "snelheid": "snelheden"
 }
 
-zin = input("geef een zin op? ").split(' ')
+zin = input("geef een zin op? ").split()
 nieuwezin = ""
 for woord in zin:
     if woord in veranderwoorden:
