@@ -12,7 +12,6 @@ while totaal < 1000:
         if getal != bgngetal:
             txt = txt + "+ "
     txt = txt + "= " + str(totaal)
-
-
+    
     bgngetal +=1
     print(txt)

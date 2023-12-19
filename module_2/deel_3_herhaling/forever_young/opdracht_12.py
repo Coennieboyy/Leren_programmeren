@@ -16,7 +16,7 @@ for b in range(9):
         robotArm.drop()
     else:
         for c in range (10 - arm):
-            robotArm.moveRight()
+            robotArm.moveRight()    
             arm += 1
         robotArm.drop()
         for d in range(10 - gebleven):

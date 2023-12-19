@@ -1,7 +1,7 @@
 from RobotArm import RobotArm
 robotArm = RobotArm('exercise 9')
 robotArm.reportFlaws = False
-robotArm.speed = 3
+robotArm.speed = 1
 blokje = 1
 # Jouw python instructies zet je vanaf hier:
 for i in range(4):

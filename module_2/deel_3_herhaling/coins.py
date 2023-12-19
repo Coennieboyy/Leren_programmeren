@@ -1,4 +1,4 @@
-# name of student: 
+  # name of student: 
 # number of student:
 # purpose of program: 
 # function of program:
@@ -7,6 +7,7 @@
 toPay = int(float(input('Amount to pay: '))* 100) #
 paid = int(float(input('Paid amount: ')) * 100) #
 change = paid - toPay #
+bon = {}
 
 if change > 0: #
   coinValue = 500 #
@@ -24,7 +25,8 @@ if change > 0: #
         print('return maximal ', nrCoins, ' coins of ', coinValue, ' cents!' ) #
         nrCoinsReturned = int(input('How many coins of ' + str(coinValue) +  ' cents did you return? ')) #
       change -= nrCoinsReturned * coinValue #
-      print(change)
+      if nrCoinsReturned != 0:
+        bon.update({coinValue: nrCoinsReturned})
 
 # comment on code below:
 
@@ -51,3 +53,13 @@ if change > 0: #
   print('Change not returned: ', str(change) + ' cents')
 else:
   print('done')
+
+print('''-----------------------------------
+bonnetje:\n''')
+for i in bon:
+  if i >= 100:
+    print(f"{bon[i]} x {int(i/100)} euro")
+  else:
+     print(f"{bon[i]} x {i} cents")
+
+print('''------------------------------------''')
