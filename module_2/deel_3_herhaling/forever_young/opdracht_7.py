@@ -14,7 +14,6 @@ for i in range(5):
         robotArm.moveRight()
         robotArm.moveRight()
 
-    
 
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()

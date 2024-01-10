@@ -18,11 +18,5 @@ for b in range(9):
     if b < 8:
         robotArm.moveLeft()
         
-
-
-
-
-
-    
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
