@@ -55,7 +55,7 @@ elif leeftijd >= 18:
         print("sorry geen idee wat je bedoeld, hier een glaasje water")
     else:
         gratis = "alstublieft, complimenten van het huis"
-        betalen = f"alsjeblieft je {antwoorden}, dat is dan €{round(prijs, 2)}"
+        betalen = f"alsjeblieft je {antwoorden}, dat is dan €{prijs}"
         sorry = "sorry je mag geen alcohol bestellen onder de 21"
         tejong = f"probeer het in {21 - leeftijd} jaar nog een keer"
 

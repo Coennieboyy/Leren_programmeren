@@ -21,4 +21,5 @@ while True:
         print("-[ boodschappenlijst ]- \n")
         for i in boodschappen:
             print(f"{boodschappen[i]} x {i}")
+        print("-----------------------")
         break
