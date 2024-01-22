@@ -1,0 +1,22 @@
+1. import random
+2. functie voor try and accept string
+3. functie voor try and accept interger
+4. functie voor try and accept niet boven 1000 kan
+5. functie om te vragen of ze nog een keer willen spelen
+6. random.randint voor random getal generen
+7. variable voor rondes, score en raden
+8. While loop
+9. input voor het vragen dat de speler een getal moet raden
+10. Absolute om uit te rekenen hoe dicht bij of ver weg die is van het getal dat de speler moet raden
+11. als het raadgetal gelijk is aan randomgetal print("goed geraden") score += 1 
+12. vraagt hij of de speler nog een keer wilt spelen
+13. als antwoord ja is op de vraag: voer stap 6 uit en rondes += 1 print(f"\nronde {rondes} \n") 
+14. als antwoord nee is: break
+15. if functie om uitrekenen of het hoger of lager moet zijn en kijken voor hoe warm die is
+16. als verschil <= 50 print("je bent warm")
+17. als verschil <= 20 print("je bent heel warm")
+18. ander print("hogeroflager")
+19. als het raadgetal niet gelijk is aan randomgetal raden += 1
+20. als raden == 10 print(f"Jammer het getal was {randomgetal}")
+21. vraag naar stap 12 en kijk dan naar stap 13 of 14
+22 als stap 14 true is print(f'''bedankt voor het spelen Je hebt {rondes}x gespeelden je hebt een score van {score} behaald.''')

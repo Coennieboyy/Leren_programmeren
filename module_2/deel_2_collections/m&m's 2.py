@@ -4,7 +4,7 @@ def antwoord(a):
     while True:
         getal = input(a)
         try:
-            getal = int(getal)
+            getal = int(getal)      
             return getal
         except ValueError:
             print(f"{getal} is geen getal, vul een getal in")

@@ -64,8 +64,11 @@ elif leeftijd >= 18:
     elif antwoorden == "cola" and bandje == None:
         print(betalen)
 
-    if antwoorden == "bier" and stempel == False and (bandje == "blauw" or bandje == "rood"):
+    if antwoorden == "bier" and stempel == False and bandje == "blauw":
         print(gratis)
+    elif antwoorden == "bier" and stempel == False and bandje == "rood":
+        print(sorry)
+        print(tejong)
     elif antwoorden == "bier" and stempel == True and bandje == None:
         print(betalen)
     elif antwoorden == "bier" and stempel == False and bandje == None:
@@ -77,9 +80,11 @@ elif leeftijd >= 18:
     elif antwoorden == "champagne" and bandje == "rood":
         print(sorry)
         print(tejong)
+    elif antwoorden == "champagne" and bandje == None and leeftijd < 21:
+        print("sorry alleen vips mogen champagne bestellen")
+        print(sorry)
+        print(tejong)
     elif antwoorden == "champagne" and bandje == None:
         print("sorry alleen vips mogen champagne bestellen")
-
-
 
 

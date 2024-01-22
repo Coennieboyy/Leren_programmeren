@@ -16,8 +16,8 @@ while True:
     else:
         boodschappen.update({item : 1})
 
-    meer = antwoord("wil je nog meer toevoegen? ")
-    if meer == "nee" or meer == "n":
+    meerboodschappen = antwoord("wil je nog meer toevoegen? ")
+    if meerboodschappen == "nee" or meerboodschappen == "n":
         print("-[ boodschappenlijst ]- \n")
         for i in boodschappen:
             print(f"{boodschappen[i]} x {i}")
