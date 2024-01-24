@@ -1,14 +1,5 @@
 import random
 
-def antwoord(a):
-    while True:
-        vraag = input(a).lower()
-        try:
-            vraag = str(vraag)
-            return vraag
-        except ValueError:
-            print(f"{vraag} is geen geldig antwoord, vul text in")
-
 def intantwoord(a):
     while True:
         vraag = input(a).lower()
@@ -19,7 +10,7 @@ def intantwoord(a):
             print(f"{vraag} is geen geldig antwoord, vul een integer in")
 
 def verkeerd_getal(raadgetal):
-    if raadgetal > 1000:
+    if raadgetal > 1000 or raadgetal < 1:
         raise ValueError
     
 def VraagNieuweRonde(rondes):
@@ -27,6 +18,7 @@ def VraagNieuweRonde(rondes):
         vakerspelen = input("wil je nog een keer spelen? ").lower()
         if vakerspelen == "nee" or vakerspelen == "n":
             return False
+        return True
     return False
 
 randomgetal = random.randint(1,1000)
@@ -55,7 +47,7 @@ while True:
         if Doorgaan == True:
             randomgetal = random.randint(1,1000)
             rondes += 1
-            print(f"\nronde {rondes} \n")
+            print(f"\nronde {rondes} en score van {score} \n")
             HogerOfLager = "Geraden"
         else:
             break
@@ -72,8 +64,7 @@ while True:
                 print("Je bent heel warm")
             else:
                 print("Je bent warm")
-        else:
-            print(HogerOfLager)
+        print(HogerOfLager)
 
     #Als je het getal niet hebt geraden
     if raadgetal != randomgetal:
@@ -85,9 +76,10 @@ while True:
             if Doorgaan == True:
                 randomgetal = random.randint(1,1000)
                 rondes += 1
+                print(f"\nronde {rondes} en score van {score} \n")
             else:
                 break
-
+        print(randomgetal)
 print(f'''
 bedankt voor het spelen 
 Je hebt {rondes}x gespeeld

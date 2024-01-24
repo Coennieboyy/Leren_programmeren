@@ -1,9 +1,10 @@
 from fruitmand import fruitmand
 
-for fruit in fruitmand:
-    fruit.update({"name": "watermeloen",
+
+fruitmand.append({"name": "watermeloen",
                   "weight": 3000,
                   "color": "green",
                   "round": True})
-    
+
+for fruit in fruitmand:   
     print(fruit["weight"])
