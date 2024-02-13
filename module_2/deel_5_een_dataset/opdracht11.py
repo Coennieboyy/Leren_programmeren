@@ -18,7 +18,7 @@ def antwoord(a):
         except ValueError:
             print(f"{vraag} is niet een kleur in de list")
     
-vraag = antwoord("welke kleur? ")
+vraag = antwoord("welke kleur fruit wil je? ")
 
 for fruit in fruitmand:
     if fruit['color'] == vraag:

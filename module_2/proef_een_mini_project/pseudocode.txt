@@ -1,0 +1,32 @@
+Import random
+
+list aannmaken
+
+functie voor de vraag met try and except
+
+while loop
+    deelnemer variable met de vraag voor de deelnemers
+    als deelnemer niet in de list zit   
+        list.append(deelnemer)
+    anders
+        print("je naam zit al in de lijstjestrekker")
+    
+    als de lijst geen drie deelnemers heeft vraag het dan opnieuw en anders ga door naar regel 16
+
+    vraag of ze nog meer deelnemers wilt toevoegen
+    als ze nee invoeren:
+        lijst2 = lijst1.copy()
+        break
+
+variable pogingen = 0
+
+while loop:
+    poging +=1
+    dictionary = {}
+    random.shuffle(lijst2)
+    for loop in range(len(lijst1))
+        als lijst1 niet gelijk is aan lijst2
+            dictionary.update({lijst1: lijst2})
+    als len(dict) == len(lijst1):
+        print(dict, poging)
+        break
