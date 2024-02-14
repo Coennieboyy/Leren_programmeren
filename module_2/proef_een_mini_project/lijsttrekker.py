@@ -35,7 +35,7 @@ while True:
     if len(dict) == len(lijst1):
         break
 
-while True:
+while True: 
     naamvragen = input("van wie wil je het lootje weten? ")
     if naamvragen in dict:
         print(f"Hallo {naamvragen} jij hebt {dict[naamvragen]} getrokken")
