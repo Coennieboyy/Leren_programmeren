@@ -33,8 +33,12 @@ while True:
         if lijst1[num] != lijst2[num]:
             dict.update({lijst1[num]: lijst2[num]})
     if len(dict) == len(lijst1):
-        print(dict, poging)
         break
 
-
-     
+while True:
+    naamvragen = input("van wie wil je het lootje weten? ")
+    if naamvragen in dict:
+        print(f"Hallo {naamvragen} jij hebt {dict[naamvragen]} getrokken")
+        break
+    else:
+        print(f"Die naam zit er niet in, kies uit {lijst1}")
