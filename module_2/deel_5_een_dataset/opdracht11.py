@@ -33,6 +33,3 @@ elif rond < niet_rond:
     print(f"Er zijn {niet_rond - rond} minder ronde vruchten dan niet ronde vruchten in de kleur {vraag}")
 else:
     print(f"Er zijn {rond} ronde vruchten en {niet_rond} niet ronde vruchten in de kleur {vraag}")
-
-        
- 
