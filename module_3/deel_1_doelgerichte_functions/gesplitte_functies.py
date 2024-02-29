@@ -134,24 +134,52 @@ def verschil_tussen_getallen(getallenlijst):
 
     return verschil2
 
-print(f'''Aantal getallen: {alle_getallen(getallenlijst)}
-opsommen: {opsomming_alle_getallen(getallenlijst)}
-gemiddelde: {gemiddelde_berekenen(opsomming_alle_getallen(getallenlijst), alle_getallen(getallenlijst))}
-grootste getal: {grootste_getal(getallenlijst)}
-kleinste getal: {kleinste_getal(getallenlijst)}
-eerste getal in de lijst: {Eerste_getal(getallenlijst)}
-{kleinste_getal(getallenlijst)} / {controlegetal1}: {kleingetal_deel_door_controlegetal1(controlegetal1)}
-{grootste_getal(getallenlijst)} / {controlegetal2}: {Grootstegetal_deel_door_controlegetal2(controlegetal2)}
-Aantal unieke elementen: {Aantal_unieke_elementen(getallenlijst)}
-Het verschil tussen {Aantal_unieke_elementen(getallenlijst)} & {controlegetal1}: {Verschil_tussen_uniek_en_controlegetal1(getallenlijst)}
-Gesorteerde lijst getallen: {Gesorteerde_lijst(getallenlijst)}
-Gesorteerde lijst unieke getallen: {Unieke_gesorteerde_lijst(getallenlijst)}
-Telling van elementen: {Tel_unieke_getallen(getallenlijst)}
-Deelbaar door {controlegetal1} (op volgorde): {Deelbaar1_door_controlegetal1(getallenlijst)}
-Deelbaar door {controlegetal2} (op volgorde): {Deelbaar2_door_controlegetal2(getallenlijst)}
-{controlegetal1} & {controlegetal2} komt wel voor in de lijst {Bepaald_getal_controle(getallenlijst)}
-{controlegetal1} komt voor op positie(s) {Positie_eerste_controlegetal(getallenlijst)}
-Standaardafwijking: {Standaard_afwijking_berekenen(getallenlijst)}
-Geshufflede lijst: {Shuffle_lijst(getallenlijst)}
-Willekeurige getal uit de lijst: {random_getal(getallenlijst)}
-Het verschil tussen {random_getal(getallenlijst)} & {controlegetal2}: {verschil_tussen_getallen(getallenlijst)}''')
+def dict_maken(getallenlijst, controlegetal1, controlegetal2):
+    functiedict = {}
+    functiedict.update({
+        "Aantalgetallen": alle_getallen(getallenlijst),
+        "opsommen": opsomming_alle_getallen(getallenlijst),
+        "gemiddelde": gemiddelde_berekenen(opsomming_alle_getallen(getallenlijst), alle_getallen(getallenlijst)),
+        "grootstegetal": grootste_getal(getallenlijst),
+        "kleinstegetal": kleinste_getal(getallenlijst),
+        "eerstegetal in de lijst": Eerste_getal(getallenlijst),
+        "deelsom1": kleingetal_deel_door_controlegetal1(controlegetal1),
+        "deelsom2":Grootstegetal_deel_door_controlegetal2(controlegetal2),
+        "unieke elementen": Aantal_unieke_elementen(getallenlijst),
+        "verschil":Verschil_tussen_uniek_en_controlegetal1(getallenlijst),
+        "Gesorteerde lijst getallen": Gesorteerde_lijst(getallenlijst),
+        "Gesorteerde lijst unieke getallen": Unieke_gesorteerde_lijst(getallenlijst),
+        "Telling van elementen": Tel_unieke_getallen(getallenlijst),
+        "Deelbaar1 controlegetal1": Deelbaar1_door_controlegetal1(getallenlijst),
+        "Deelbaar2 door controlegetal2": Deelbaar2_door_controlegetal2(getallenlijst), 
+        "controlegetal1 & controlegetal2": Bepaald_getal_controle(getallenlijst),
+        "controlegetal1 positie(s)": Positie_eerste_controlegetal(getallenlijst),
+        "Standaardafwijking": Standaard_afwijking_berekenen(getallenlijst),
+        "Geshufflede lijst": Shuffle_lijst(getallenlijst),
+        "Willekeurige getal": random_getal(getallenlijst),
+        "verschil tussen random_getal & controlegetal2": verschil_tussen_getallen(getallenlijst)
+        })
+    
+    resultaten = {
+        "Aantal getallen": functiedict["aantalgetallen"],
+        "Gemiddelde":functiedict["gemiddelde"],
+        "Som": functiedict["opsommen"],
+        "Grootste getal": functiedict["grootstegetal"],
+        "Kleinste getal": functiedict["kleinstegetal"],
+        "Eerste getal": functiedict["eerstegetal in de lijst"],
+        f"{kleinste_getal} / {controlegetal1}": functiedict["deelsom1"],
+        f"{grootste_getal} / {controlegetal2}": functiedict["Deelbaar2"],
+        "Aantal unieke elementen": functiedict["uniekeelementen"],
+        f"Het verschil tussen {Aantal_unieke_elementen} & {controlegetal1}": verschil1,
+        "Gesorteerde lijst getallen": gesorteerde_lijst,
+        "Gesorteerde lijst unieke getallen": gesorteerde_lijst_uniek,
+        "Telling van elementen": telling_elementen,
+        f"Deelbaar door {controlegetal1} (op volgorde)": deelbaar1,
+        f"Deelbaar door {controlegetal2} (op volgorde)": deelbaar2,
+        f"{controlegetal1} & {controlegetal2} komt wel voor in de lijst": komtvoor,
+        f"{controlegetal1} komt voor op positie(s)": posities,
+        "Standaardafwijking": standaardafwijking,
+        "Geshufflede lijst": getallen,
+        "Willekeurige getal uit de lijst": random_getal,
+        f"Het verschil tussen {random_getal} & {controlegetal2}": verschil2,
+    }
