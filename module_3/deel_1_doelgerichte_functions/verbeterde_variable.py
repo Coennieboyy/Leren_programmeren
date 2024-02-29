@@ -14,8 +14,8 @@ def Letter_Teller(woorden:str) -> int:
     Hoeveel_letters = len(woorden_lijst)
     return Hoeveel_letters 
 
-# bereked gemiddelde letters per woord
-def Gemiddel_De_Letters_Per_Woord(woorden:str) -> float:
+# berekend gemiddelde letters per woord
+def Gemiddelde_Letters_Per_Woord(woorden:str) -> float:
     woordenlijst = woorden.split()
     
     totaleletters = 0
@@ -25,9 +25,9 @@ def Gemiddel_De_Letters_Per_Woord(woorden:str) -> float:
     gemiddeldelijst = totaleletters / len(woordenlijst)
     return gemiddeldelijst
 
-def Rekentafel_Van_12(som:int, berekening:int=10) -> None:
+def Rekentafels(som:int, berekening:int=10) -> None:
     for getal in range(1, berekening+1):
         antwoord = getal * som
         print(f'{getal} x {som} = {antwoord}')
 
-print(Rekentafel_Van_12(12))
+print(Rekentafels(12))
