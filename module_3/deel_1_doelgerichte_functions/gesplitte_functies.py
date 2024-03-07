@@ -2,15 +2,8 @@ from collections import Counter
 import math, random
 
 # Voorbeeld van het gebruik van de functie:
-getallenlijst = [16, 2, 5, 8, 12, 3, 9, 16, 5, 8, 64, 33]
-controlegetal1 = 8
-controlegetal2 = 3
-#analyse_resultaat = analyseer_getallenlijst(getallenlijst, controlegetal1, controlegetal2)
-# print("Analyse resultaten:")
-# for key, value in analyse_resultaat.items():
-#     print(f"{key}: {value}")
 
-def alle_getallen(getallenlijst):
+def alle_getallen():
     aantal = len(getallenlijst)
 
     return aantal
@@ -20,62 +13,62 @@ def gemiddelde_berekenen(som, aantal):
 
     return gemiddelde
 
-def opsomming_alle_getallen(getallenlijst):
+def opsomming_alle_getallen():
     som = sum(getallenlijst)
 
     return som
 
-def grootste_getal(getallenlijst):
+def grootste_getal():
     grootste_getal = max(getallenlijst)
 
     return(grootste_getal)
 
-def kleinste_getal(getallenlijst):
+def kleinste_getal():
     kleinste_getal = min(getallenlijst)
 
     return(kleinste_getal)
 
-def Eerste_getal(getallenlijst):
+def Eerste_getal():
     eerste_getal = getallenlijst[0]
 
     return(eerste_getal)
 
-def kleingetal_deel_door_controlegetal1(controlegetal1):
-    delen1 = kleinste_getal(getallenlijst) / controlegetal1
+def kleingetal_deel_door_controlegetal1():
+    delen1 = kleinste_getal() / controlegetal1
 
     return delen1
 
-def Grootstegetal_deel_door_controlegetal2(controlegetal2):
-    delen2 = grootste_getal(getallenlijst) / controlegetal2
+def Grootstegetal_deel_door_controlegetal2():
+    delen2 = grootste_getal() / controlegetal2
 
     return delen2
 
-def Unieke_getallen(getallenlijst):
+def Unieke_getallen():
     unieke_getallen = list(set(getallenlijst))
 
     return unieke_getallen
 
-def Aantal_unieke_elementen(getallenlijst):
-    aantal_unieke_elementen = len(Unieke_getallen(getallenlijst))
+def Aantal_unieke_elementen():
+    aantal_unieke_elementen = len(Unieke_getallen())
 
     return aantal_unieke_elementen
 
-def Verschil_tussen_uniek_en_controlegetal1(getallenlijst):
-    verschil1 = abs(Aantal_unieke_elementen(getallenlijst) - controlegetal1)
+def Verschil_tussen_uniek_en_controlegetal1():
+    verschil1 = abs(Aantal_unieke_elementen() - controlegetal1)
 
     return verschil1
 
-def Gesorteerde_lijst(getallenlijst):
+def Gesorteerde_lijst():
     gesorteerde_lijst = sorted(getallenlijst)
 
     return gesorteerde_lijst
 
-def Unieke_gesorteerde_lijst(getallenlijst):
-    gesorteerde_lijst_uniek = sorted(Unieke_getallen(getallenlijst))
+def Unieke_gesorteerde_lijst():
+    gesorteerde_lijst_uniek = sorted(Unieke_getallen())
 
     return gesorteerde_lijst_uniek
 
-def Tel_unieke_getallen(getallenlijst):
+def Tel_unieke_getallen():
     telling_elementen = {}
     for getal in getallenlijst:
         aantalkeer = telling_elementen[getal]+1 if getal in telling_elementen else 1
@@ -83,30 +76,30 @@ def Tel_unieke_getallen(getallenlijst):
 
     return telling_elementen
 
-def Deelbaar1_door_controlegetal1(getallenlijst):
+def Deelbaar1_door_controlegetal1():
     deelbaar1 = []
-    for getal in Unieke_getallen(getallenlijst):
+    for getal in Unieke_getallen():
         if getal % controlegetal1 == 0:
             deelbaar1.append(getal)
     deelbaar1 = sorted(deelbaar1)
 
     return deelbaar1
 
-def Deelbaar2_door_controlegetal2(getallenlijst):
+def Deelbaar2_door_controlegetal2():
     deelbaar2 = []
-    for getal in Unieke_getallen(getallenlijst):
+    for getal in Unieke_getallen():
         if getal % controlegetal2 == 0:
             deelbaar2.append(getal)
     deelbaar2 = sorted(deelbaar2)
 
     return deelbaar2
 
-def Bepaald_getal_controle(getallenlijst):
+def Bepaald_getal_controle():
     komtvoor = controlegetal1 in getallenlijst and controlegetal2 in getallenlijst
 
     return komtvoor
 
-def Positie_eerste_controlegetal(getallenlijst):
+def Positie_eerste_controlegetal():
     posities = []
     for index, num in enumerate(getallenlijst):
         if num == controlegetal1:
@@ -114,72 +107,81 @@ def Positie_eerste_controlegetal(getallenlijst):
 
     return posities
 
-def Standaard_afwijking_berekenen(getallenlijst):
-    verschil_kwadraat = sum((x - gemiddelde_berekenen(opsomming_alle_getallen(getallenlijst), alle_getallen(getallenlijst))) ** 2 for x in getallenlijst)
-    variantie = verschil_kwadraat / alle_getallen(getallenlijst)
+def Standaard_afwijking_berekenen():
+    verschil_kwadraat = sum((x - gemiddelde_berekenen(opsomming_alle_getallen(), alle_getallen())) ** 2 for x in getallenlijst)
+    variantie = verschil_kwadraat / alle_getallen()
     standaardafwijking = math.sqrt(variantie)
 
     return standaardafwijking
 
-def Shuffle_lijst(getallenlijst):
+def Shuffle_lijst():
     return random.shuffle(getallenlijst)
 
-def random_getal(getallenlijst):
-    random_getal = getallenlijst[random.randint(0,alle_getallen(getallenlijst)-1)]
+def random_getal():
+    random_getal = getallenlijst[random.randint(0,alle_getallen()-1)]
 
     return random_getal
 
-def verschil_tussen_getallen(getallenlijst):
-    verschil2 = abs(random_getal(getallenlijst) - controlegetal2)
+def verschil_tussen_getallen(getal):
+    verschil2 = abs(getal - controlegetal2)
 
     return verschil2
 
-def dict_maken(getallenlijst, controlegetal1, controlegetal2):
-    functiedict = {}
-    functiedict.update({
-        "Aantalgetallen": alle_getallen(getallenlijst),
-        "opsommen": opsomming_alle_getallen(getallenlijst),
-        "gemiddelde": gemiddelde_berekenen(opsomming_alle_getallen(getallenlijst), alle_getallen(getallenlijst)),
-        "grootstegetal": grootste_getal(getallenlijst),
-        "kleinstegetal": kleinste_getal(getallenlijst),
-        "eerstegetal in de lijst": Eerste_getal(getallenlijst),
-        "deelsom1": kleingetal_deel_door_controlegetal1(controlegetal1),
-        "deelsom2":Grootstegetal_deel_door_controlegetal2(controlegetal2),
-        "unieke elementen": Aantal_unieke_elementen(getallenlijst),
-        "verschil":Verschil_tussen_uniek_en_controlegetal1(getallenlijst),
-        "Gesorteerde lijst getallen": Gesorteerde_lijst(getallenlijst),
-        "Gesorteerde lijst unieke getallen": Unieke_gesorteerde_lijst(getallenlijst),
-        "Telling van elementen": Tel_unieke_getallen(getallenlijst),
-        "Deelbaar1 controlegetal1": Deelbaar1_door_controlegetal1(getallenlijst),
-        "Deelbaar2 door controlegetal2": Deelbaar2_door_controlegetal2(getallenlijst), 
-        "controlegetal1 & controlegetal2": Bepaald_getal_controle(getallenlijst),
-        "controlegetal1 positie(s)": Positie_eerste_controlegetal(getallenlijst),
-        "Standaardafwijking": Standaard_afwijking_berekenen(getallenlijst),
-        "Geshufflede lijst": Shuffle_lijst(getallenlijst),
-        "Willekeurige getal": random_getal(getallenlijst),
-        "verschil tussen random_getal & controlegetal2": verschil_tussen_getallen(getallenlijst)
-        })
+def dict_maken():
+    randomgetal = random_getal()
+    functiedict = {
+        "Aantalgetallen": alle_getallen(),
+        "opsommen": opsomming_alle_getallen(),
+        "gemiddelde": gemiddelde_berekenen(opsomming_alle_getallen(), alle_getallen()),
+        "grootstegetal": grootste_getal(),
+        "kleinstegetal": kleinste_getal(),
+        "eerstegetal in de lijst": Eerste_getal(),
+        "deelsom1": kleingetal_deel_door_controlegetal1(),
+        "deelsom2":Grootstegetal_deel_door_controlegetal2(),
+        "unieke elementen": Aantal_unieke_elementen(),
+        "verschil":Verschil_tussen_uniek_en_controlegetal1(),
+        "Gesorteerde lijst getallen": Gesorteerde_lijst(),
+        "Gesorteerde lijst unieke getallen": Unieke_gesorteerde_lijst(),
+        "Telling van elementen": Tel_unieke_getallen(),
+        "Deelbaar1 controlegetal1": Deelbaar1_door_controlegetal1(),
+        "Deelbaar2 door controlegetal2": Deelbaar2_door_controlegetal2(), 
+        "controlegetal1 & controlegetal2": Bepaald_getal_controle(),
+        "controlegetal1 positie(s)": Positie_eerste_controlegetal(),
+        "Standaardafwijking": Standaard_afwijking_berekenen(),
+        "Geshufflede lijst": Shuffle_lijst(),
+        "Willekeurige getal": randomgetal,
+        "verschil tussen random_getal & controlegetal2": verschil_tussen_getallen(randomgetal)
+        }
     
     resultaten = {
-        "Aantal getallen": functiedict["aantalgetallen"],
+        "Aantal getallen": functiedict["Aantalgetallen"],
         "Gemiddelde":functiedict["gemiddelde"],
         "Som": functiedict["opsommen"],
         "Grootste getal": functiedict["grootstegetal"],
         "Kleinste getal": functiedict["kleinstegetal"],
         "Eerste getal": functiedict["eerstegetal in de lijst"],
-        f"{kleinste_getal} / {controlegetal1}": functiedict["deelsom1"],
-        f"{grootste_getal} / {controlegetal2}": functiedict["Deelbaar2"],
-        "Aantal unieke elementen": functiedict["uniekeelementen"],
-        f"Het verschil tussen {Aantal_unieke_elementen} & {controlegetal1}": verschil1,
-        "Gesorteerde lijst getallen": gesorteerde_lijst,
-        "Gesorteerde lijst unieke getallen": gesorteerde_lijst_uniek,
-        "Telling van elementen": telling_elementen,
-        f"Deelbaar door {controlegetal1} (op volgorde)": deelbaar1,
-        f"Deelbaar door {controlegetal2} (op volgorde)": deelbaar2,
-        f"{controlegetal1} & {controlegetal2} komt wel voor in de lijst": komtvoor,
-        f"{controlegetal1} komt voor op positie(s)": posities,
-        "Standaardafwijking": standaardafwijking,
-        "Geshufflede lijst": getallen,
-        "Willekeurige getal uit de lijst": random_getal,
-        f"Het verschil tussen {random_getal} & {controlegetal2}": verschil2,
+        f"{functiedict['kleinstegetal']} / {controlegetal1}": functiedict["deelsom1"],
+        f"{functiedict['grootstegetal']} / {controlegetal2}": functiedict["deelsom2"],
+        "Aantal unieke elementen": functiedict["unieke elementen"],
+        f"Het verschil tussen {functiedict['unieke elementen']} & {controlegetal1}": functiedict["verschil"],
+        "Gesorteerde lijst getallen": functiedict["Gesorteerde lijst getallen"],
+        "Gesorteerde lijst unieke getallen": functiedict["Gesorteerde lijst unieke getallen"],
+        "Telling van elementen": functiedict["Telling van elementen"],
+        f"Deelbaar door {controlegetal1} (op volgorde)": functiedict["Deelbaar1 controlegetal1"],
+        f"Deelbaar door {controlegetal2} (op volgorde)": functiedict["Deelbaar2 door controlegetal2"],
+        f"{controlegetal1} & {controlegetal2} komt wel voor in de lijst": functiedict["controlegetal1 & controlegetal2"],
+        f"{controlegetal1} komt voor op positie(s)": functiedict["controlegetal1 positie(s)"],
+        "Standaardafwijking": functiedict["Standaardafwijking"],
+        "Geshufflede lijst": ["Geshufflede lijst"],
+        "Willekeurige getal uit de lijst": functiedict["Willekeurige getal"],
+        f"Het verschil tussen {functiedict['Willekeurige getal']} & {controlegetal2}": functiedict["verschil tussen random_getal & controlegetal2"],
     }
+    return resultaten
+
+getallenlijst = [16, 2, 5, 8, 12, 3, 9, 16, 5, 8, 64, 33]
+controlegetal1 = 8
+controlegetal2 = 3
+analyse_resultaat = dict_maken()
+print("Analyse resultaten:")
+for key, value in analyse_resultaat.items():
+     print(f"{key}: {value}")
