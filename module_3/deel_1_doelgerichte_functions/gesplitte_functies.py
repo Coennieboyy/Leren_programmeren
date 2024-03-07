@@ -181,7 +181,7 @@ def Dict_maken():
 getallenlijst = [16, 2, 5, 8, 12, 3, 9, 16, 5, 8, 64, 33]
 controlegetal1 = 8
 controlegetal2 = 3
-analyse_resultaat = dict_maken()
+analyse_resultaat = Dict_maken()
 print("Analyse resultaten:")
 for key, value in analyse_resultaat.items():
      print(f"{key}: {value}")

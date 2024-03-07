@@ -1,6 +1,7 @@
-# gaat kijken of je kan delen door 2
-def Delen_Door_2(getal:int) -> bool:
+# gaat kijken of het deelbaar is door 2
+def Deelbaar_Door_2(getal:int) -> bool:
     return getal % 2 == 0
+
 # draait de zin om
 def Zin_Omdraaier(zin:str) -> str:
     woordlijst = zin.split()
@@ -25,9 +26,9 @@ def Gemiddelde_Letters_Per_Woord(woorden:str) -> float:
     gemiddeldelijst = totaleletters / len(woordenlijst)
     return gemiddeldelijst
 
-def Rekentafels(som:int, berekening:int=10) -> None:
-    for getal in range(1, berekening+1):
-        antwoord = getal * som
-        print(f'{getal} x {som} = {antwoord}')
+def Rekentafels(keergetal:int, maxgetal:int=10) -> None:
+    for getal in range(1, maxgetal+1):
+        antwoord = getal * keergetal
+        print(f'{getal} x {keergetal} = {antwoord}')
 
 print(Rekentafels(12))
