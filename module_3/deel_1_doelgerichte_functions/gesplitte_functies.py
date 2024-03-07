@@ -3,27 +3,27 @@ import math, random
 
 # Voorbeeld van het gebruik van de functie:
 
-def alle_getallen():
+def Alle_getallen():
     aantal = len(getallenlijst)
 
     return aantal
 
-def gemiddelde_berekenen(som, aantal):
+def Gemiddelde_berekenen(som, aantal):
     gemiddelde = som / aantal
 
     return gemiddelde
 
-def opsomming_alle_getallen():
+def Opsomming_alle_getallen():
     som = sum(getallenlijst)
 
     return som
 
-def grootste_getal():
+def Grootste_getal():
     grootste_getal = max(getallenlijst)
 
     return(grootste_getal)
 
-def kleinste_getal():
+def Kleinste_getal():
     kleinste_getal = min(getallenlijst)
 
     return(kleinste_getal)
@@ -34,12 +34,12 @@ def Eerste_getal():
     return(eerste_getal)
 
 def kleingetal_deel_door_controlegetal1():
-    delen1 = kleinste_getal() / controlegetal1
+    delen1 = Kleinste_getal() / controlegetal1
 
     return delen1
 
 def Grootstegetal_deel_door_controlegetal2():
-    delen2 = grootste_getal() / controlegetal2
+    delen2 = Grootste_getal() / controlegetal2
 
     return delen2
 
@@ -108,8 +108,8 @@ def Positie_eerste_controlegetal():
     return posities
 
 def Standaard_afwijking_berekenen():
-    verschil_kwadraat = sum((x - gemiddelde_berekenen(opsomming_alle_getallen(), alle_getallen())) ** 2 for x in getallenlijst)
-    variantie = verschil_kwadraat / alle_getallen()
+    verschil_kwadraat = sum((x - Gemiddelde_berekenen(Opsomming_alle_getallen(), Alle_getallen())) ** 2 for x in getallenlijst)
+    variantie = verschil_kwadraat / Alle_getallen()
     standaardafwijking = math.sqrt(variantie)
 
     return standaardafwijking
@@ -117,24 +117,24 @@ def Standaard_afwijking_berekenen():
 def Shuffle_lijst():
     return random.shuffle(getallenlijst)
 
-def random_getal():
-    random_getal = getallenlijst[random.randint(0,alle_getallen()-1)]
+def Random_getal():
+    random_getal = getallenlijst[random.randint(0,Alle_getallen()-1)]
 
     return random_getal
 
-def verschil_tussen_getallen(getal):
+def Verschil_tussen_getallen(getal):
     verschil2 = abs(getal - controlegetal2)
 
     return verschil2
 
-def dict_maken():
-    randomgetal = random_getal()
+def Dict_maken():
+    randomgetal = Random_getal()
     functiedict = {
-        "Aantalgetallen": alle_getallen(),
-        "opsommen": opsomming_alle_getallen(),
-        "gemiddelde": gemiddelde_berekenen(opsomming_alle_getallen(), alle_getallen()),
-        "grootstegetal": grootste_getal(),
-        "kleinstegetal": kleinste_getal(),
+        "Aantalgetallen": Alle_getallen(),
+        "opsommen": Opsomming_alle_getallen(),
+        "gemiddelde": Gemiddelde_berekenen(Opsomming_alle_getallen(), Alle_getallen()),
+        "grootstegetal": Grootste_getal(),
+        "kleinstegetal": Kleinste_getal(),
         "eerstegetal in de lijst": Eerste_getal(),
         "deelsom1": kleingetal_deel_door_controlegetal1(),
         "deelsom2":Grootstegetal_deel_door_controlegetal2(),
@@ -150,7 +150,7 @@ def dict_maken():
         "Standaardafwijking": Standaard_afwijking_berekenen(),
         "Geshufflede lijst": Shuffle_lijst(),
         "Willekeurige getal": randomgetal,
-        "verschil tussen random_getal & controlegetal2": verschil_tussen_getallen(randomgetal)
+        "verschil tussen random_getal & controlegetal2": Verschil_tussen_getallen(randomgetal)
         }
     
     resultaten = {
