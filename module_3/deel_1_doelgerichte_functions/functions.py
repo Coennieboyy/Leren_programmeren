@@ -1,11 +1,13 @@
 def antwoord(a):
     while True:
-        vraag = input(a).lower()
+        string = input(a)
         try:
-            vraag = str(vraag)
-            return vraag
+            if str.isalpha(string) == True:
+                return string
+            else:
+                raise ValueError
         except ValueError:
-            print(f"{vraag} is geen geldig antwoord, vul text in")
+            print(f"{string} is geen geldig antwoord, vul tekst in")
 
 def antwoordint(a):
     while True:
