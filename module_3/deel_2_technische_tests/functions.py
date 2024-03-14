@@ -5,10 +5,15 @@ from data import JOURNEY_IN_DAYS
 ##################### O03 #####################
 
 def copper2silver(amount:int) -> float:
-    pass
+    if amount == 10:
+        amount == 0
+        silver2gold(amount=1)
+    return amount
 
 def silver2gold(amount:int) -> float:
-    pass
+    if amount == 5:
+        amount == 0
+        platinum2gold(amount=1)
 
 def copper2gold(amount:int) -> float:
     pass
