@@ -125,18 +125,42 @@ def getItemsValueInGold(items:list) -> float:
 ##################### O09 #####################
 
 def getCashInGoldFromPeople(people:list) -> float:
-    pass
-
+    waarde = 0
+    for person in people:
+        if person['cash']['platinum']:
+            waarde = waarde + platinum2gold(person['cash']['platinum'])
+        if person['cash']['gold']:
+            waarde = waarde + (person['cash']['gold'])
+        if person['cash']['silver']:
+            waarde = waarde + silver2gold(person['cash']['silver'])
+        if person['cash']['copper']:
+            waarde = waarde + copper2gold(person['cash']['copper'])
+    return float(waarde)
 ##################### O10 #####################
 
 def getInterestingInvestors(investors:list) -> list:
-    pass
+    investorlist = []
+    for invest in investors:
+        if invest['profitReturn'] <= 10:
+            investorlist.append(invest)
+    return investorlist
 
 def getAdventuringInvestors(investors:list) -> list:
-    pass
+    investorlist = []
+    for invest in investors:
+        if invest['profitReturn'] <= 10 and invest['adventuring'] == True:
+            investorlist.append(invest)
+    return investorlist
 
 def getTotalInvestorsCosts(investors:list, gear:list) -> float:
-    pass
+    investerscost = 0
+    investorscount = len(getAdventuringInvestors(investors))
+    investors = getAdventuringInvestors(investors)
+    horses =(getNumberOfHorsesNeeded(investorscount))
+    tents =(getNumberOfTentsNeeded(investorscount))
+    investerscost = investerscost + getTotalRentalCost(horses, tents)
+    investerscost = investerscost + getItemsValueInGold(gear)
+    return float(investerscost)
 
 ##################### O11 #####################
 
