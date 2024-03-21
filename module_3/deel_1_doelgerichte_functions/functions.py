@@ -98,7 +98,7 @@ def Doorgaan(berekening:float)-> float:
             berekening = division(n1, n2)
             print(f"{n1} : {n2} = {berekening}")
         elif choice == "i" and choice in juiste_antwoorden_lijstb:
-            eindantwoord = f"dit is je eindantwoord {berekening}"
-            return eindantwoord
+            eindantwoord = f"dit is je eindantwoord: {berekening}"
+            return print(eindantwoord)
         else:
-            print("voer 1 van de opties in") 
+            print("voer 1 van de opties in")
