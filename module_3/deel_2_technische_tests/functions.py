@@ -153,14 +153,11 @@ def getAdventuringInvestors(investors:list) -> list:
     return investorlist
 
 def getTotalInvestorsCosts(investors:list, gear:list) -> float:
-    investerscost = 0
-    investorscount = len(getAdventuringInvestors(investors))
-    investors = getAdventuringInvestors(investors)
-    horses =(getNumberOfHorsesNeeded(investorscount))
-    tents =(getNumberOfTentsNeeded(investorscount))
-    investerscost = investerscost + getTotalRentalCost(horses, tents)
-    investerscost = investerscost + getItemsValueInGold(gear)
-    return float(investerscost)
+    investerscount = len(getAdventuringInvestors(investors))
+    food = getJourneyFoodCostsInGold(investerscount, investerscount)
+    rent = getTotalRentalCost(investerscount, investerscount)
+    gear = getItemsValueInGold(gear)
+    return float(food + rent + (investerscount * gear))
 
 ##################### O11 #####################
 
