@@ -16,10 +16,14 @@
 
 # print(fibonacci_reeks())
 
-lijst = [1]
-
+lijst = [1,1,1]
+volgorde = 1
 optellen = 0
 
-for reeks in range():
-    optellen += 1
-    lijst + optellen
+
+for reeks in range(len(lijst) - 1):
+    if lijst[volgorde] == lijst[volgorde +1]:
+        optellen += 1
+        lijst.append(optellen)
+
+print(lijst)
