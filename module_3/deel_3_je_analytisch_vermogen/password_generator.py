@@ -24,20 +24,26 @@ for kleineletters in range(nodigelengte):
     choiceKleineletters = random.choice(kleineletterList)
     wachtwoordList.append(choiceKleineletters)
 
-shuffle = random.shuffle(wachtwoordList)
+TrueOfFalse1 = False
+TrueOfFalse2 = False
+TrueOfFalse3 = False
+TrueOfFalse4 = False
 
 while True:
-    if wachtwoordList[11] in hoofdletterList and wachtwoordList[12] in hoofdletterList:
-        shuffle = random.shuffle(wachtwoordList)
+    if wachtwoordList[11] not in hoofdletterList and wachtwoordList[12] not in hoofdletterList: # if statements om te checken dat sommige opties niet op de verkeerde plek staan
+        TrueOrFalse1 = True
 
-    if wachtwoordList[23] in kleineletterList:
-        shuffle = random.shuffle(wachtwoordList)
+    if wachtwoordList[23] not in kleineletterList:
+        TrueOrFalse2 = True
 
-    if wachtwoordList[0] in interpunctiesList and wachtwoordList[23] in interpunctiesList:
-        shuffle = random.shuffle(wachtwoordList)
+    if wachtwoordList[0] not in interpunctiesList and wachtwoordList[23] not in interpunctiesList:
+        TrueOrFalse3 = True
 
-    if wachtwoordList[0:4] in cijfersList:
-        shuffle = random.shuffle(wachtwoordList)
-    else:
-        break 
-print(wachtwoordList)
+    if wachtwoordList[0:4] not in cijfersList:
+        TrueOrFalse4 = True
+    
+    if TrueOfFalse1 and TrueOfFalse2 and TrueOrFalse3 and TrueOfFalse4: # if statement om te checken dat alle if's True zijn 
+        break
+
+wachtwoord = "".join(wachtwoordList)
+print(f"dit is jou gegenereerdewachtwoord: {wachtwoord}")
