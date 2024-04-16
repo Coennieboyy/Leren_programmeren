@@ -30,20 +30,23 @@ TrueOfFalse3 = False
 TrueOfFalse4 = False
 
 while True:
+    random.shuffle(wachtwoordList)
     if wachtwoordList[11] not in hoofdletterList and wachtwoordList[12] not in hoofdletterList: # if statements om te checken dat sommige opties niet op de verkeerde plek staan
-        TrueOrFalse1 = True
+        TrueOfFalse1 = True
 
     if wachtwoordList[23] not in kleineletterList:
-        TrueOrFalse2 = True
+        TrueOfFalse2 = True
 
     if wachtwoordList[0] not in interpunctiesList and wachtwoordList[23] not in interpunctiesList:
-        TrueOrFalse3 = True
+        TrueOfFalse3 = True
 
     if wachtwoordList[0:4] not in cijfersList:
-        TrueOrFalse4 = True
+        TrueOfFalse4 = True
     
-    if TrueOfFalse1 and TrueOfFalse2 and TrueOrFalse3 and TrueOfFalse4: # if statement om te checken dat alle if's True zijn 
+    if TrueOfFalse1 and TrueOfFalse2 and TrueOfFalse3 and TrueOfFalse4: # if statement om te checken dat alle if's True zijn 
         break
+    else:
+        print(TrueOfFalse1, TrueOfFalse2, TrueOfFalse3, TrueOfFalse4) # else voor debuggen
 
 wachtwoord = "".join(wachtwoordList)
-print(f"dit is jou gegenereerdewachtwoord: {wachtwoord}")
+print(f"dit is jou gegenereerdewachtwoord: {wachtwoordList}")
