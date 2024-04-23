@@ -27,45 +27,34 @@ def round_piece(amount: float) -> int:
 
 # returns amount rounded to the closest decimals: .00 or .25 or .50 or 0.75 unless amount >= 10
 def round_quarter(amount: float) -> float:
-  amountWholeNumber = math.floor(amount)
-  if amount >=1:
-    amountFlt = amount % amountWholeNumber
-  if amount < 1:
-    amountFlt = amount
-  if amountFlt <= 0.12 and amountFlt > 0.00:
-    amountFlt = 0.00
-  elif amountFlt <= 0.37 and amountFlt > 0.12:
-    amountFlt = 0.25
-  elif amountFlt <= 0.62 and amountFlt > 0.37:
-    amountFlt = 0.50
-  elif amountFlt <= 0.87 and amountFlt > 0.62:
-    amountFlt = 0.75
-  elif amount >= 10:
-    return round(amount)
-  elif amountFlt > 0.87:
-    return math.ceil(amount)
-    
-  antwoord = amount + amountFlt
-  return antwoord
+    ROUND_QUARTER = 25
+    som = round(amount * 100 / ROUND_QUARTER) * ROUND_QUARTER / 100
+    return som
 
 
 # returns single or plural description of a string 'single desciption|plural description' 
 # depending on amount
 def str_single_plural(amount: float, txt: str) -> str:
-  split = txt.split(TXT_PIECES, 1)
-  if amount >=2:  
-    return f"{amount} {split[1]}"
+  splitTxt = txt.split(TXT_PIECES, 1)
+  if len(splitTxt) > 1:
+    if amount >=2:  
+      return f"{splitTxt[1]}"
+    else:
+      return f"{splitTxt[0]}"
   else:
-    return f"{amount} {split[0]}"
+    return f"{splitTxt[0]}"
 
 
 # returns description of single or plural units
 def str_units(amount: float, unit: str) -> str:
-  split = unit.split(UNIT_PIECES, 1)
-  if amount >=2:  
-    return f"{amount} {split[1]}"
+  splitUnit = unit.split(UNIT_PIECES, 1)
+  if len(splitUnit) > 1:
+    if amount >=2:  
+      return f"{splitUnit[1]}"
+    else:
+      return f"{splitUnit[0]}"
   else:
-    return f"{amount} {split[0]}"
+      return f"{splitUnit[0]}"
 
 
 # returns amount in string with 1/4 or 1/2 or 3/4

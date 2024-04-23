@@ -27,27 +27,27 @@ for kleineletters in range(nodigelengte):
 
 while True:
     random.shuffle(wachtwoordList)
-    TrueOfFalse1 = False
-    TrueOfFalse2 = False
-    TrueOfFalse3 = False
-    TrueOfFalse4 = False
+    checkTrue1 = False
+    checkTrue2 = False
+    checkTrue3 = False
+    checkTrue4 = False
 
     if wachtwoordList[11] not in hoofdletterList and wachtwoordList[12] not in hoofdletterList: # if statements om te checken dat sommige opties niet op de verkeerde plek staan
-        TrueOfFalse1 = True
+        checkTrue1 = True
 
     if wachtwoordList[23] not in kleineletterList:
-        TrueOfFalse2 = True
+        checkTrue2 = True
 
     if wachtwoordList[0] not in interpunctiesList and wachtwoordList[23] not in interpunctiesList:
-        TrueOfFalse3 = True
+        checkTrue3 = True
 
     if wachtwoordList[0] not in cijfersList and wachtwoordList[1] not in cijfersList and wachtwoordList[2] not in cijfersList:
-        TrueOfFalse4 = True
+        checkTrue4 = True
     
-    if TrueOfFalse1 and TrueOfFalse2 and TrueOfFalse3 and TrueOfFalse4: # if statement om te checken dat alle if's True zijn 
+    if checkTrue1 and checkTrue2 and checkTrue3 and checkTrue4: # if statement om te checken dat alle if's True zijn 
         break
     else:
-        print(TrueOfFalse1, TrueOfFalse2, TrueOfFalse3, TrueOfFalse4) # else voor debuggen
+        print(checkTrue1, checkTrue2, checkTrue3, checkTrue4) # else voor debuggen
 
 wachtwoord = "".join(wachtwoordList)
 print(f"dit is jou gegenereerdewachtwoord: {wachtwoordList}")
