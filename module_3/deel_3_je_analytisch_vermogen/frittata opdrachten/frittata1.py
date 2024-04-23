@@ -9,8 +9,10 @@ nr_persons = int(input_nr_persons("Ingredienten voor hoeveel personen? ")) # rep
 
 # ----- CALCULATIONS ----
 # calculate factor
-if nr_persons != 4:
-    calcFactor = nr_persons/4 
+if nr_persons != RECIPE_PERSONS:
+    calcFactor = nr_persons/RECIPE_PERSONS 
+else:
+    calcFactor = 1
 
 # calculate amount_eggs
 eggs = round_piece(calcFactor * AMOUNT_EGGS)
@@ -25,7 +27,7 @@ salt = round_quarter(calcFactor * AMOUNT_SALT)
 pepper = round_quarter(calcFactor * AMOUNT_PEPPER)
 
 # calculate amount_oil
-oil = round_piece(calcFactor * AMOUNT_OIL)
+oil = round_quarter(calcFactor * AMOUNT_OIL)
 
 # calculate amount_onions
 onions = round_piece(calcFactor * AMOUNT_ONIONS)
@@ -34,7 +36,7 @@ onions = round_piece(calcFactor * AMOUNT_ONIONS)
 garlics = round_piece(calcFactor * AMOUNT_GARLICS)
 
 # calculate amount_spinach
-spinach = round_piece(calcFactor * AMOUNT_SPINACH)
+spinach = round_quarter(calcFactor * AMOUNT_SPINACH)
 
 # calculate amount_paprikas
 paprikas = round_piece(calcFactor * AMOUNT_PAPRIKAS)
