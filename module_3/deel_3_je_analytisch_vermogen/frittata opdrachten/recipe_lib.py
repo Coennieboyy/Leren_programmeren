@@ -10,6 +10,10 @@ TXT_SPOONS = 'eetlepel|eetlepels'
 TXT_TEASPOONS = 'theelepel|theelepels'
 TXT_CUPS = 'kopje|kopjes'
 
+UNIT_CUPS = TXT_CUPS
+UNIT_TEASPOONS = TXT_TEASPOONS
+UNIT_SPOONS = TXT_SPOONS
+
 # failsafe input of a number of persons
 def input_nr_persons(prompt: str) -> int:
   while True:
@@ -28,7 +32,14 @@ def round_piece(amount: float) -> int:
 # returns amount rounded to the closest decimals: .00 or .25 or .50 or 0.75 unless amount >= 10
 def round_quarter(amount: float) -> float:
     ROUND_QUARTER = 25
-    som = round(amount * 100 / ROUND_QUARTER) * ROUND_QUARTER / 100
+    amount2 = math.floor(amount)
+    floatSom = amount % amount2
+    if amount < 10:
+      som = round(amount * 100 / ROUND_QUARTER) * ROUND_QUARTER / 100
+    elif floatSom <= 0.49:
+       som = math.floor(amount)
+    else:
+      som = math.ceil(amount)
     return som
 
 
@@ -47,15 +58,16 @@ def str_single_plural(amount: float, txt: str) -> str:
 
 # returns description of single or plural units
 def str_units(amount: float, unit: str) -> str:
-  splitUnit = unit.split(UNIT_PIECES, 1)
-  if len(splitUnit) > 1:
-    if amount >=2:  
-      return f"{splitUnit[1]}"
-    else:
-      return f"{splitUnit[0]}"
-  else:
-      return f"{splitUnit[0]}"
-
+  if unit == UNIT_CUPS:
+    unit = TXT_CUPS
+  if unit == UNIT_SPOONS:
+    unit = TXT_SPOONS
+  if unit == UNIT_TEASPOONS:
+    unit = TXT_TEASPOONS
+  if unit == UNIT_PIECES:
+    unit = ""
+  return str_single_plural(amount, unit)
+  
 
 # returns amount in string with 1/4 or 1/2 or 3/4
 TXT_FRACTIONS = ('','¼','½','¾')

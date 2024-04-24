@@ -50,7 +50,7 @@ while True:
         print(checkTrue1, checkTrue2, checkTrue3, checkTrue4) # else voor debuggen
 
 wachtwoord = "".join(wachtwoordList)
-print(f"dit is jou gegenereerdewachtwoord: {wachtwoordList}")
+print(f"dit is jou gegenereerdewachtwoord: {wachtwoord}")
 
 print(wachtwoordList[11]) # prints voor debuggen
 print(wachtwoordList[12])
