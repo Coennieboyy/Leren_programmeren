@@ -103,9 +103,9 @@ GRAM_PER_ML_SPINACH = 0.15
 
 # returns amount in gram for amount in milliliter based on density (weight per volume)
 def ml2gram(amount_ml: float, gram_per_ml: float) -> float:
-  if gram_per_ml >= 100:
+  if amount_ml >= 100:
     return round(amount_ml * gram_per_ml)
-  elif gram_per_ml < 100:
+  elif amount_ml < 100:
     return amount_ml * gram_per_ml
 
 
