@@ -33,7 +33,7 @@ def round_piece(amount: float) -> int:
 def round_quarter(amount: float) -> float:
     ROUND_QUARTER = 25
     amount2 = math.floor(amount)
-    floatSom = amount % amount2
+    floatSom = amount2 % amount
     if amount < 10:
       som = round(amount * 100 / ROUND_QUARTER) * ROUND_QUARTER / 100
     elif floatSom <= 0.49:
@@ -85,7 +85,14 @@ ML_TEASPOON = 5 # one teaspoon contains 5 ml
 ML_CUP = 240 # one cup contains 240 ml
 
 def unit2ml(amount: float, unit: str) -> float:
-  pass
+  if unit == UNIT_CUPS:
+    return amount * ML_CUP
+  if unit == UNIT_SPOONS:
+    return amount * ML_SPOON
+  if unit == UNIT_TEASPOONS:
+    return amount * ML_TEASPOON
+  else:
+    raise TypeError("vul milliliters in")
 
 # average densities in gram per ml for common ingredients, to calculate weight(gram) from milliliters(ml)
 # 1ml of salt weighs 1.2 gram 
