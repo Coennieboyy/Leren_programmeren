@@ -10,10 +10,6 @@ TXT_SPOONS = 'eetlepel|eetlepels'
 TXT_TEASPOONS = 'theelepel|theelepels'
 TXT_CUPS = 'kopje|kopjes'
 
-UNIT_CUPS = TXT_CUPS
-UNIT_TEASPOONS = TXT_TEASPOONS
-UNIT_SPOONS = TXT_SPOONS
-
 # failsafe input of a number of persons
 def input_nr_persons(prompt: str) -> int:
   while True:
@@ -32,14 +28,12 @@ def round_piece(amount: float) -> int:
 # returns amount rounded to the closest decimals: .00 or .25 or .50 or 0.75 unless amount >= 10
 def round_quarter(amount: float) -> float:
     ROUND_QUARTER = 25
-    amount2 = math.floor(amount)
-    floatSom = amount2 % amount
     if amount < 10:
       som = round(amount * 100 / ROUND_QUARTER) * ROUND_QUARTER / 100
-    elif floatSom <= 0.49:
-       som = math.floor(amount)
     else:
-      som = math.ceil(amount)
+      som = round(amount)
+    if som == 0:
+      som = 0.25
     return som
 
 
