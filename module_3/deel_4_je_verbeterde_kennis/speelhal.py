@@ -19,7 +19,7 @@ if answer in NO_OPTIONS:
 else:
   print('Ik ga u nu vragen wat en hoeveel u wilt...')
 
-nr_tickets = input_int("Hoeveel personen?\n")
+nr_tickets = input_int("Hoeveel personen?\n",0,MAX_TICKETS )
 
 answer = input_yes_no("Ook VR-VIP seats?(J/N)\n")
 vr_vip_ordered = answer in YES_OPTIONS
