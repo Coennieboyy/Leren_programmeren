@@ -87,7 +87,7 @@ while keuze1:
                        slow_print("Je liep verder en kwam een dorp tegen")
                        clear_terminal()
                        slow_print("Iemand kwam op je aflopen")
-                       clear_terminal
+                       clear_terminal()
                        slow_print("...")
                        slow_print('"HEY"')
                        clear_terminal()

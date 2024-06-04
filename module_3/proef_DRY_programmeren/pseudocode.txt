@@ -1,0 +1,6 @@
+functie aanmaken om te vragen hoeveel bolletjes de persoon wilt.
+functie aanmaken om te vragen of die nog een ijsje wilt.
+functie aanmaken om te vragen of die het in een bakje of hoorntje wilt en als het meer dan 3 is dat het gelijk in een bakje gaat.
+
+while loop om door de functies heen te loopen
+break als ze niet nog meer ijsjes willen
