@@ -27,6 +27,9 @@ def antwoord(a:str)-> str:
             print(f"{string} is geen geldig antwoord, vul tekst in")
 
 #------ijsSalon specefiek functies------#
+def soortKlant():
+    klant = antwoordint("Bent u 1) een particuliere klant of 2) een zakelijke klant? ")
+
 
 def hoeveelIjs() -> int:
     while True:
@@ -63,6 +66,7 @@ def hoorntjeOfbakjeFunctie(aantal:int) -> str:
     while True:
         if aantal in range(1,4):
             hoorntjeBakje = antwoord(f"Wilt u deze {aantal} bolletje(s) in een hoorntje of een bakje? ")
+            # To do kijken of het slimmer kan.
             if hoorntjeBakje == "bakje":
                 ijsjesdict["bakje"]["hoeveelheid"] += 1
                 return hoorntjeBakje

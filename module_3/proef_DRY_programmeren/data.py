@@ -12,6 +12,9 @@ antwoorddictToppings = {"a":"geen",
                         "c":"sprinkels",
                         "d":"caramelSausH"}
 
+antwoorddictKlant = {"1":"particulier",
+                     "2":"zakelijk"}
+
 ijsjesdict = {'vanille': {'hoeveelheid':0, 'prijs': 1.10},
               'aardbei': {'hoeveelheid':0, 'prijs': 1.10},
               'chocolade': {'hoeveelheid':0, 'prijs': 1.10},
