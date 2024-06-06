@@ -31,11 +31,21 @@ def antwoord(a:str)-> str:
 def hoeveelIjs() -> int:
     while True:
         aantal = antwoordint("\nhoeveel bolletjes wilt u? ")
-        if aantal > 0:
-            ijsjesdict["vanille"]["hoeveelheid"] += aantal
+        if aantal in range(1,9):
             return aantal
         else:
             print("Voer alstublieft een geldig aantal bolletjes in.")
+
+def welkeSmaak(aantal:int,ijsjesdict:dict)-> dict:
+    for bolletjes in range(aantal):
+        while True:
+            soortBol = antwoord(f"Welke smaak wilt u voor bolletje nummer {bolletjes + 1}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille?” ")
+            if soortBol in list(antwoorddictSmaken.keys()):
+                ijsjesdict[antwoorddictSmaken[soortBol]]["hoeveelheid"] += 1
+                break
+            else:
+                print("sorry dat snap ik niet")
+    return ijsjesdict
     
 def meerIjsjes(hoorntjeOfBakje:str, aantal:int) -> bool:
     print(f"Hier is uw {hoorntjeOfBakje} met {aantal} bolletje(s)")
@@ -64,24 +74,47 @@ def hoorntjeOfbakjeFunctie(aantal:int) -> str:
         elif aantal in range(4,9):
             ijsjesdict["bakje"]["hoeveelheid"] += 1
             return "bakje"
+        
+def topping(hoorntjeBakje):
+    toppingsDict["caramelSaus"]["prijs"] = 0.60
+    while True:
+        soortTopping = antwoord("Wat voor topping wilt u: A) Geen, B) Slagroom, C) Sprinkels of D) Caramel Saus? ")
+        if soortTopping in antwoorddictToppings:
+            if soortTopping == "a":
+                return toppingsDict
+            else:
+                if soortTopping in list(antwoorddictToppings.keys()):
+                    toppingsDict[antwoorddictToppings[soortTopping]]["hoeveelheid"] += 1
+                    if hoorntjeBakje == "bakje" and soortTopping == "d":
+                        toppingsDict[antwoorddictToppings[soortTopping]]["prijs"] += 0.30
+                    return toppingsDict
         else:
-            print("Sorry, zulke grote bakken hebben we niet")
-            return "opnieuw"
-        
-        
+            print("sorry dat snap ik niet")
 
 
 def prijsBerekening(hoeveelheid:int, prijs:float) -> float:
     berekening = hoeveelheid * prijs
-    return berekening
+    return round(berekening,2)
 
 def bon(ijsjesdict:dict) -> str:
     print(f"---------[Papi Gelato]---------")
     totaal = 0
+    toppingtotaal = 0
+    toppingCheck = False
     for ijsje in ijsjesdict:
-        if ijsjesdict[ijsje]['hoeveelheid'] !=0:
-            print(f"{ijsje}{(max-len(ijsje)) * ' '}{ijsjesdict[ijsje]['hoeveelheid']} x {ijsjesdict[ijsje]['prijs']} = {prijsBerekening(ijsjesdict[ijsje]['hoeveelheid'],ijsjesdict[ijsje]['prijs'])}")
+        if ijsjesdict[ijsje]['hoeveelheid'] != 0:
+            print(f"{ijsje}{(max-len(ijsje)) * ' '}{ijsjesdict[ijsje]['hoeveelheid']} x {ijsjesdict[ijsje]['prijs']} = {prijsBerekening(ijsjesdict[ijsje]['hoeveelheid'],ijsjesdict[ijsje]['prijs']):.2f}")
             totaal = totaal + prijsBerekening(ijsjesdict[ijsje]['hoeveelheid'],ijsjesdict[ijsje]['prijs'])
             afgerondTotaal = round(totaal,2)
-    print("                --------- +")
-    print(f"totaal             = {afgerondTotaal}")
+
+    for topping in toppingsDict:
+        if toppingsDict[topping]['hoeveelheid'] != 0:
+            toppingCheck = True
+            toppingtotaal = toppingtotaal + prijsBerekening(toppingsDict[topping]['hoeveelheid'],toppingsDict[topping]['prijs'])
+            afgerondtoppingTotaal = round(toppingtotaal,2)
+        else:
+            afgerondtoppingTotaal = 0
+    if toppingCheck:
+        print(f"Toppings{(max-len(topping)) * ' '}              {toppingtotaal:.2f}")
+    print("                --------- +")    
+    print(f"totaal             = {afgerondTotaal+afgerondtoppingTotaal:.2f}")
