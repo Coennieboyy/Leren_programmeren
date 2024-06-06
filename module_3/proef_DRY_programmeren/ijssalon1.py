@@ -10,7 +10,7 @@ while nogEenKeer:
         aantalBolletjes = hoeveelIjs()
         welkeSmaak(aantalBolletjes, ijsjesdict)
         hoorntjeOfBakjeStr = hoorntjeOfbakjeFunctie(aantalBolletjes)
-        topping(hoorntjeOfBakjeStr)
+        topping(hoorntjeOfBakjeStr,aantalBolletjes)
     nogEenKeer = meerIjsjes(hoorntjeOfBakjeStr, aantalBolletjes)
 
 

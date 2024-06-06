@@ -1,5 +1,7 @@
 antwoordlistJa = ["ja","j"]
 antwoordlistNee = ["nee", "n"]
+nogEenKeer = True
+max = 10
 antwoorddictSmaken = {"a":"aardbei",
                       "c":"chocolade",
                       "m":"munt",
@@ -8,10 +10,7 @@ antwoorddictSmaken = {"a":"aardbei",
 antwoorddictToppings = {"a":"geen",
                         "b":"slagroom",
                         "c":"sprinkels",
-                        "d":"caramelSaus"}
-nogEenKeer = True
-max = 10
-maxtotaal = 15
+                        "d":"caramelSausH"}
 
 ijsjesdict = {'vanille': {'hoeveelheid':0, 'prijs': 1.10},
               'aardbei': {'hoeveelheid':0, 'prijs': 1.10},
@@ -22,5 +21,6 @@ ijsjesdict = {'vanille': {'hoeveelheid':0, 'prijs': 1.10},
               
 toppingsDict = {'slagroom': {'hoeveelheid':0, 'prijs': 0.50},
                 'sprinkels': {'hoeveelheid':0, 'prijs': 0.30},
-                'caramelSaus': {'hoeveelheid':0, 'prijs': 0.60}}
+                'caramelSausH': {'hoeveelheid':0, 'prijs': 0.60},
+                'caramelSausB': {'hoeveelheid':0, 'prijs': 0.90}}
 

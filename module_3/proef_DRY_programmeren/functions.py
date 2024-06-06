@@ -75,18 +75,21 @@ def hoorntjeOfbakjeFunctie(aantal:int) -> str:
             ijsjesdict["bakje"]["hoeveelheid"] += 1
             return "bakje"
         
-def topping(hoorntjeBakje):
-    toppingsDict["caramelSaus"]["prijs"] = 0.60
+def topping(hoorntjeBakje:str, aantal:int) -> dict:
     while True:
         soortTopping = antwoord("Wat voor topping wilt u: A) Geen, B) Slagroom, C) Sprinkels of D) Caramel Saus? ")
         if soortTopping in antwoorddictToppings:
             if soortTopping == "a":
                 return toppingsDict
+            elif soortTopping == "d" and hoorntjeBakje == "bakje":
+                toppingsDict["caramelSausB"]["hoeveelheid"] += 1
+                return toppingsDict
+            elif soortTopping == "c":
+                toppingsDict["sprinkels"]["hoeveelheid"] += aantal
+                return toppingsDict
             else:
                 if soortTopping in list(antwoorddictToppings.keys()):
                     toppingsDict[antwoorddictToppings[soortTopping]]["hoeveelheid"] += 1
-                    if hoorntjeBakje == "bakje" and soortTopping == "d":
-                        toppingsDict[antwoorddictToppings[soortTopping]]["prijs"] += 0.30
                     return toppingsDict
         else:
             print("sorry dat snap ik niet")
