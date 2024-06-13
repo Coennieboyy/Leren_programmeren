@@ -1,5 +1,6 @@
 antwoordlistJa = ["ja","j"]
 antwoordlistNee = ["nee", "n"]
+antwoordlistBakjeOfHoorntje = ["bakje","hoorntje"]
 nogEenKeer = True
 klantBool = True
 max = 10
@@ -19,10 +20,10 @@ antwoorddictToppings = {"a":"geen",
                         "c":"sprinkels",
                         "d":"caramelSausH"}
 
-ijsjesdict = {'vanille': {'hoeveelheid':0, 'prijs': 1.10},
-              'aardbei': {'hoeveelheid':0, 'prijs': 1.10},
-              'chocolade': {'hoeveelheid':0, 'prijs': 1.10},
-              'munt': {'hoeveelheid':0, 'prijs': 1.10},
+ijsjesdict = {'vanille': {'hoeveelheid':0, 'prijs': 0.95},
+              'aardbei': {'hoeveelheid':0, 'prijs': 0.95},
+              'chocolade': {'hoeveelheid':0, 'prijs': 0.95},
+              'munt': {'hoeveelheid':0, 'prijs': 0.95},
               'hoorntje': {'hoeveelheid':0, 'prijs': 1.25},
               'bakje':{'hoeveelheid':0, 'prijs': 0.75},
               'L.vanille': {'hoeveelheid':0, 'prijs': 9.80},

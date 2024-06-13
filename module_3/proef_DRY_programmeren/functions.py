@@ -82,11 +82,8 @@ def hoorntjeOfbakjeFunctie(aantal:int) -> str:
         if aantal in range(1,4):
             hoorntjeBakje = antwoord(f"Wilt u deze {aantal} bolletje(s) in een hoorntje of een bakje? ")
             # To do kijken of het slimmer kan.
-            if hoorntjeBakje == "bakje":
-                ijsjesdict["bakje"]["hoeveelheid"] += 1
-                return hoorntjeBakje
-            elif hoorntjeBakje == "hoorntje":
-                ijsjesdict["hoorntje"]["hoeveelheid"] += 1 
+            if hoorntjeBakje in antwoordlistBakjeOfHoorntje:
+                ijsjesdict[hoorntjeBakje]["hoeveelheid"] += 1
                 return hoorntjeBakje
             else:
                 print("Sorry dat is geen optie die we aanbieden...")
