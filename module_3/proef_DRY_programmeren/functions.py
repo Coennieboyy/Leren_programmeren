@@ -1,5 +1,6 @@
 from data import *
 
+# Functie zorgt ervoor dat alles behalve een float fout is
 def antwoordfloat(a)-> float:
     while True:
         vraag = input(a)
@@ -9,6 +10,7 @@ def antwoordfloat(a)-> float:
         except ValueError:
             print(f"{vraag} is geen geldig antwoord, vul cijfer in")
 
+# Functie zorgt ervoor dat alles behalve een interger fout is
 def antwoordint(a)-> int:
     while True:
         vraag = input(a)
@@ -18,6 +20,7 @@ def antwoordint(a)-> int:
         except ValueError:
             print(f"{vraag} Sorry dat is geen optie die we aanbieden...")
 
+# Functie zorgt ervoor dat alles behalve een string fout is
 def antwoord(a:str)-> str:
     while True:
         string = input(a).lower()
@@ -27,6 +30,8 @@ def antwoord(a:str)-> str:
             print(f"{string} is geen geldig antwoord, vul tekst in")
 
 #------ijsSalon specefiek functies------#
+
+# Functie bepaald wat voor klant je bent
 def soortKlant():
     while True:
         klant = int(antwoordint("Bent u 1) een particuliere klant of 2) een zakelijke klant? "))
@@ -37,6 +42,7 @@ def soortKlant():
         else:
             print("Sorry dat is geen optie die we aanbieden...")
 
+# Functie bepaald hoeveel bolletjes of liters ijs je wilt
 def hoeveelIjs(KlantBool:bool) -> int:
     while True:
         if KlantBool:
@@ -50,6 +56,7 @@ def hoeveelIjs(KlantBool:bool) -> int:
         return aantal
 
 
+# Functie vraagt welke soort smaken je wilt voor elk bolletje of liter
 def welkeSmaak(aantal:int,ijsjesdict:dict,smaken:dict, klantBool:bool)-> dict:
     if klantBool:
         bOrL = "bolletje"
@@ -64,7 +71,8 @@ def welkeSmaak(aantal:int,ijsjesdict:dict,smaken:dict, klantBool:bool)-> dict:
             else:
                 print("Sorry dat is geen optie die we aanbieden...")
     return ijsjesdict
-    
+
+# Functie vraagt of je nog meer ijsjes wilt    
 def meerIjsjes(hoorntjeOfBakje:str, aantal:int) -> bool:
     print(f"Hier is uw {hoorntjeOfBakje} met {aantal} bolletje(s)")
 
@@ -77,6 +85,7 @@ def meerIjsjes(hoorntjeOfBakje:str, aantal:int) -> bool:
         else:
             print("Sorry dat is geen optie die we aanbieden...")
 
+# Functie bepaald als je 4 of meer bolletjes wilt dat je bakje krijgt of vraagt of je een bakje of hoorntje wilt
 def hoorntjeOfbakjeFunctie(aantal:int) -> str:
     while True:
         if aantal in range(1,4):
@@ -90,7 +99,8 @@ def hoorntjeOfbakjeFunctie(aantal:int) -> str:
         elif aantal in range(4,9):
             ijsjesdict["bakje"]["hoeveelheid"] += 1
             return "bakje"
-        
+
+# Functie vraagt wat voor topping je wilt op je ijs     
 def topping(hoorntjeBakje:str, aantal:int) -> dict:
     while True:
         soortTopping = antwoord("Wat voor topping wilt u: A) Geen, B) Slagroom, C) Sprinkels of D) Caramel Saus? ")
@@ -110,11 +120,12 @@ def topping(hoorntjeBakje:str, aantal:int) -> dict:
         else:
             print("Sorry dat is geen optie die we aanbieden...")
 
-
+# Functie maakt een keer som
 def prijsBerekening(hoeveelheid:int, prijs:float) -> float:
     berekening = hoeveelheid * prijs
     return round(berekening,2)
 
+# Functie die bepaald welk deel er van de bon geprint moet worden en print dat dan
 def bon(ijsjesdict:dict,klantBool:bool) -> str:
     print(f"---------[Papi Gelato]---------")
     totaal = 0
