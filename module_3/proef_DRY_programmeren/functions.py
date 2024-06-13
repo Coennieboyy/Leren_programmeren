@@ -57,7 +57,7 @@ def welkeSmaak(aantal:int,ijsjesdict:dict,smaken:dict, klantBool:bool)-> dict:
         bOrL = "liter"
     for bolletjes in range(aantal):
         while True: 
-            soortBol = antwoord(f"Welke smaak wilt u voor {bOrL} nummer {bolletjes + 1}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille?” ")
+            soortBol = antwoord(f"Welke smaak wilt u voor {bOrL} nummer {bolletjes + 1}? A) Aardbei, C) Chocolade, V) Vanille?” ")
             if soortBol in list(smaken.keys()):
                 ijsjesdict[smaken[soortBol]]["hoeveelheid"] += 1
                 break  
