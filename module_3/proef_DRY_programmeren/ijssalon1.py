@@ -1,16 +1,26 @@
 from functions import *
 from data import *
 
+
 print("Welkom bij Papi Gelato")
 
+klant = soortKlant()
+
+
 while nogEenKeer:
-    aantalBolletjes = hoeveelIjs()
-    welkeSmaak(aantalBolletjes, ijsjesdict)
-    hoorntjeOfBakjeStr = hoorntjeOfbakjeFunctie(aantalBolletjes)
-    topping(hoorntjeOfBakjeStr,aantalBolletjes)
-    nogEenKeer = meerIjsjes(hoorntjeOfBakjeStr, aantalBolletjes)
+    aantalBolletjes = hoeveelIjs(klant)
+
+    if klant:
+        welkeSmaak(aantalBolletjes, ijsjesdict, antwoorddictSmaken, klant)
+        hoorntjeOfBakjeStr = hoorntjeOfbakjeFunctie(aantalBolletjes)
+        topping(hoorntjeOfBakjeStr,aantalBolletjes)
+        nogEenKeer = meerIjsjes(hoorntjeOfBakjeStr, aantalBolletjes)
+    else:
+        welkeSmaak(aantalBolletjes, ijsjesdict, antwoorddictSmakenLiter, klant)
+        nogEenKeer = False
 
 
-bon(ijsjesdict)
-print("Bedankt en tot ziens!")
+if nogEenKeer == False:
+    bon(ijsjesdict, klant) 
+print("\nBedankt en tot ziens!")
  

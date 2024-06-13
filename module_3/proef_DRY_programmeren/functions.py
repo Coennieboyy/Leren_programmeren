@@ -16,7 +16,7 @@ def antwoordint(a)-> int:
             vraag = int(vraag)
             return vraag
         except ValueError:
-            print(f"{vraag} Sorry, dat snap ik niet")
+            print(f"{vraag} Sorry dat is geen optie die we aanbieden...")
 
 def antwoord(a:str)-> str:
     while True:
@@ -28,26 +28,41 @@ def antwoord(a:str)-> str:
 
 #------ijsSalon specefiek functies------#
 def soortKlant():
-    klant = antwoordint("Bent u 1) een particuliere klant of 2) een zakelijke klant? ")
-
-
-def hoeveelIjs() -> int:
     while True:
-        aantal = antwoordint("\nhoeveel bolletjes wilt u? ")
-        if aantal in range(1,9):
-            return aantal
+        klant = int(antwoordint("Bent u 1) een particuliere klant of 2) een zakelijke klant? "))
+        if klant == 1:
+            return True
+        elif klant == 2:
+            return False
         else:
-            print("Voer alstublieft een geldig aantal bolletjes in.")
+            print("Sorry dat is geen optie die we aanbieden...")
 
-def welkeSmaak(aantal:int,ijsjesdict:dict)-> dict:
-    for bolletjes in range(aantal):
-        while True:
-            soortBol = antwoord(f"Welke smaak wilt u voor bolletje nummer {bolletjes + 1}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille?” ")
-            if soortBol in list(antwoorddictSmaken.keys()):
-                ijsjesdict[antwoorddictSmaken[soortBol]]["hoeveelheid"] += 1
-                break
+def hoeveelIjs(KlantBool:bool) -> int:
+    while True:
+        if KlantBool:
+            aantal = antwoordint("\nhoeveel bolletjes wilt u? ")
+            if aantal in range(1,9):
+                return aantal
             else:
-                print("sorry dat snap ik niet")
+                print("Voer alstublieft een geldig aantal bolletjes in.")
+        else:
+            aantal = antwoordint("\nhoeveel liters wilt u? ")
+        return aantal
+
+
+def welkeSmaak(aantal:int,ijsjesdict:dict,smaken:dict, klantBool:bool)-> dict:
+    if klantBool:
+        bOrL = "bolletje"
+    else:
+        bOrL = "liter"
+    for bolletjes in range(aantal):
+        while True: 
+            soortBol = antwoord(f"Welke smaak wilt u voor {bOrL} nummer {bolletjes + 1}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille?” ")
+            if soortBol in list(smaken.keys()):
+                ijsjesdict[smaken[soortBol]]["hoeveelheid"] += 1
+                break  
+            else:
+                print("Sorry dat is geen optie die we aanbieden...")
     return ijsjesdict
     
 def meerIjsjes(hoorntjeOfBakje:str, aantal:int) -> bool:
@@ -60,7 +75,7 @@ def meerIjsjes(hoorntjeOfBakje:str, aantal:int) -> bool:
         elif meerIjsjesvraag in antwoordlistNee:
             return False
         else:
-            print("Sorry, dat snap ik niet")
+            print("Sorry dat is geen optie die we aanbieden...")
 
 def hoorntjeOfbakjeFunctie(aantal:int) -> str:
     while True:
@@ -74,7 +89,7 @@ def hoorntjeOfbakjeFunctie(aantal:int) -> str:
                 ijsjesdict["hoorntje"]["hoeveelheid"] += 1 
                 return hoorntjeBakje
             else:
-                print("Sorry, dat snap ik niet")
+                print("Sorry dat is geen optie die we aanbieden...")
         elif aantal in range(4,9):
             ijsjesdict["bakje"]["hoeveelheid"] += 1
             return "bakje"
@@ -96,14 +111,14 @@ def topping(hoorntjeBakje:str, aantal:int) -> dict:
                     toppingsDict[antwoorddictToppings[soortTopping]]["hoeveelheid"] += 1
                     return toppingsDict
         else:
-            print("sorry dat snap ik niet")
+            print("Sorry dat is geen optie die we aanbieden...")
 
 
 def prijsBerekening(hoeveelheid:int, prijs:float) -> float:
     berekening = hoeveelheid * prijs
     return round(berekening,2)
 
-def bon(ijsjesdict:dict) -> str:
+def bon(ijsjesdict:dict,klantBool:bool) -> str:
     print(f"---------[Papi Gelato]---------")
     totaal = 0
     toppingtotaal = 0
@@ -125,3 +140,5 @@ def bon(ijsjesdict:dict) -> str:
         print(f"Toppings{(max-len(topping)) * ' '}              {toppingtotaal:.2f}")
     print("                --------- +")    
     print(f"totaal             = {afgerondTotaal+afgerondtoppingTotaal:.2f}")
+    if klantBool == False:
+        print(f"BTW (9%)           = {(afgerondTotaal + afgerondtoppingTotaal)/100 * 9:.2f}")
