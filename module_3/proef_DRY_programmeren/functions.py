@@ -138,4 +138,4 @@ def bon(ijsjesdict:dict,klantBool:bool) -> str:
     print("                --------- +")    
     print(f"totaal             = {afgerondTotaal+afgerondtoppingTotaal:.2f}")
     if klantBool == False:
-        print(f"BTW (9%)           = {(afgerondTotaal + afgerondtoppingTotaal)/100 * 9:.2f}")
+        print(f"BTW (6%)           = {(afgerondTotaal + afgerondtoppingTotaal)/100 * 6:.2f}")
